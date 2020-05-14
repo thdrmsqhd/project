@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/side%20bar1.js"></script>
+    <link rel="stylesheet" href="css/side%20bar1.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        /*-------------------좌측 헤더 부분 예상 위치------------------------------------*/
+        .leftbox {
+            float: left;
+            width: 15%;
+            height: 1100px;
+            /*            background: rgb(47,82,89);*/
+        }
+
+        /*-------------------본문 박스  위치-------------------------------------------*/
+        .rightbox {
+            float: right;
+            width: 85%;
+            height: 1100px;
+            background: rgb(244, 244, 244);
+        }
+
+        /*-------------------본문 상단 박스 위치-------------------------------------------*/
+        .top {
+            width: 100%;
+            height: 250px;
+            display: block;
+        }
+
+        .topheader {
+            display: block;
+            background: white;
+            width: 100%;
+            height: 80px;
+        }
+
+        .topbottom {
+            display: block;
+            background: white;
+            width: 100%;
+            height: 150px;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+        }
+
+        .topbox {
+            width: 8%;
+            height: 125px;
+            background: white;
+            float: left;
+            margin-top: 1%;
+            margin-left: 1%;
+            border-radius: 50%;
+            line-height: 125px;
+            text-align: center;
+            font-weight: bold;
+
+            font-size: 1.5em;
+        }
+
+        .topleftbox1 {
+            background: rgb(211, 0, 65);
+            color: white;
+
+        }
+
+        .topheaderleft {
+            width: 25%;
+            height: 80px;
+            float: left;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 100px;
+            margin-left: 15px;
+        }
+
+        .topboxright {
+            float: right;
+            margin-top: 50px;
+            margin-right: 55px;
+            width: 10%;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border: 1px solid gray;
+            border-radius: 50px 50px 50px 50px;
+            background: gray;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /*-------------------본문 중단 박스 위치-------------------------------------------*/
+        .midbox {
+            /*            background: white;*/
+            width: 90%;
+            height: 550px;
+            margin: 0 auto;
+            
+            overflow: hidden;
+            margin-left: 5%;
+        }
+
+        /*-------------------예매 박스 위치----------------------------------------------*/
+        .targetbox{
+/*            border: 1px solid black;*/
+            background: white;
+            border-radius: 5px 5px 5px 5px;
+            box-shadow: 3px 9px 10px rgba(0, 0, 50, 0.4);
+        }
+        .targetbox1 {
+            /*            background: gray;*/
+            width: 25%;
+            height: 550px;
+            float: left;
+
+        }
+
+        .targetbox2 {
+            /*            background: gray;*/
+            width: 25%;
+            height: 550px;
+            float: left;
+            margin-left: 5%;
+
+        }
+
+        .targetbox3 {
+            /*            background: gray;*/
+            width: 25%;
+            height: 550px;
+            margin-left: 5%;
+            float: left;
+
+        }
+
+        /*-------------------예매 박스 위치-----------------------------------------------*/
+        /*-------------------예매 박스 사진 위치-------------------------------------------*/
+        .targetheader {
+            display: block;
+            height: 350px;
+            /*            background: black;*/
+            color: white;
+        }
+
+        .targetheader img {
+            width: 100%;
+            height: 350px;
+            border-radius: 5px 5px 5px 5px;
+        }
+
+        /*-------------------예매 박스 사진 위치--------------------------------------------*/
+        /*-------------------공연 제목/날자  위치-------------------------------------------*/
+        .targetmid {
+            width: 100%;
+            height: 100px;
+            /*            background: yellow;*/
+        }
+
+        .title {
+            width: 100%;
+            height: 50px;
+            /*            background: blue;*/
+            text-align: left;
+            margin-left: 10px;
+            line-height: 50px;
+            font-weight: bold;
+            font-size: 2em;
+            
+            /*            color: white;*/
+        }
+
+        .titlebottom {
+            width: 100%;
+            height: 50px;
+            /*            background: black;*/
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+            font-size: 1.5em;
+            /*            color: white;*/
+        }
+        
+        
+
+        /*-------------------공연 제목/날자  위치-------------------------------------------*/
+        /*-------------------예매 자세히 버튼  위치-------------------------------------------*/
+        .targetfooter {
+            width: 100%;
+            height: 100px;
+            /*            background: red;*/
+        }
+
+        .targetfooterleft {
+            width: 65%;
+            height: 50px;
+            background: red;
+            display: inline-block;
+            float: left;
+            margin-left: 13px;
+            text-align: center;
+            font-weight: bold;
+            line-height: 50px;
+            color: white;
+            margin-top: 20px;
+        }
+        .targetfooterleft:hover{
+            transition: all 1s;
+            background: deepPink;
+        }
+        .targetfooterleft a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .targetfooterright {
+            width: 28%;
+            height: 50px;
+            background: black;
+            float: right;
+            margin-right: 12px;
+            text-align: center;
+            font-weight: bold;
+            line-height: 50px;
+            margin-top: 20px;
+            color: white;
+            
+        }
+
+        /*-------------------예매 자세히 버튼  위치-------------------------------------------*/
+
+        /*-------------------푸터 박스 위치-------------------------------------------*/
+        /*        footer    */
+    </style>
+    <script>
+        //<!--    제이쿼리 함수 클릭시 메뉴 숨김 보이기 -->
+        $(function() {
+            $(".e-nav").hide();
+            $(".e-etc>a").click(function() {
+
+                $(".e-nav").each(function() {
+                    console.log($(this).css("display"));
+                    if ($(this).css("display") == "block") {
+                        $(this).stop().hide(250);
+                    }
+
+                }); // sub each end
+                $(this).next().stop().show(550);
+
+            });
+           
+        }); // jQuery end
+        
+    </script>
+
+    <link rel="stylesheet" href="css/footerex.css">
+    <script>
+        $(function() {
+            $("#footer").load("footerex.html")
+        })
+    </script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+</head>
+
+<body>
+    <div class="leftbox">
+        <div id="nav">
+            <div id="e-logo">
+                <h1 class="e-logo1">
+                    <a href="#" alt="엘지아트센터 로고" title="LG ARTS CENTER">
+                        <img src="img/대전아트센터 로고 배경없음3.png" alt="">
+                    </a>
+                </h1>
+            </div>
+            <!--이미지로고 및 이미지링크 -->
+            <div id="searchbar">
+                <input id="search" type="text" placeholder="검색어 입력"><button id="search2" class="glyphicon glyphicon-search" aria-hidden="true"></button>
+            </div>
+            <!--검색어입력창        -->
+            <div id="e-wrap">
+
+                <ul class="sidebar">
+
+                    <li class="e-etc" title="로그인">
+                        <a href="login.html">로그인</a>
+                    </li>
+
+                    <li class="e-etc" title="회원가입">
+                        <a href="joinin.html">회원가입</a>
+                    </li>
+
+                    <li class="e-etc" title="LG아트센터 소개">
+                        <a href="intro.html" class="etc1" title="대전아트센터 소개">대전아트센터 소개</a>
+                    </li>
+
+                    <li class="e-etc">
+                        <a href="account.html" class="etc2" title="공연/예매">공연/예매</a>
+                        <ul class="e-nav">
+                            <li class="e-11">
+                                <a href="#" title="공연 소개">공연 소개</a>
+                            </li>
+                            <li class="e-11">
+                                <a href="account.html" title="예매 하기">예매 하기</a>
+                            </li>
+                            <li class="e-11">
+                                <a href="account-confirm.html" title="예매 확인 / 취소">예매 확인 / 취소 </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="e-etc">
+                        <a href="#" class="etc2" title="이용 안내">이용 안내</a>
+                        <ul class="e-nav">
+                            <li class="e-11">
+                                <a href="notice.html" title="공지사항">공지사항</a>
+                            </li>
+                            <li class="e-11">
+                                <a href="#" title="객석 안내">객석 안내</a>
+                            </li>
+                            <li class="e-11">
+                                <a href="root.html" title="오시는 길">오시는 길</a>
+                            </li>
+                            <li class="e-11">
+                                <a href="aroundkichen.html" title="주변 식당 안내">주변 식당 안내</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="e-etc">
+                        <a href="#" class="etc2" title="커뮤니티">커뮤니티</a>
+                        <ul class="e-nav">
+                            <li class="e-11">
+                                <a href="event_page.html" title="이벤트">이벤트</a>
+                            </li>
+                            <li class="e-11">
+                                <a href="review_page.html" title="관람후기">관람후기</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="rightbox">
+        <!-------------------------------------  최상단 박스 ---------------->
+        <div class="top">
+            <div class="topheader">
+                <div class="topheaderleft">공연 예매/소개</div>
+
+            </div>
+            <!-------------------------------------        상단 박스 ---------------->
+            <div class="topbottom">
+                <div class="topbox topleftbox1">공연 예매</div>
+                <div class="topbox topleftbox2">공연 소개</div>
+                <div class="topboxright">예매 안내</div>
+            </div>
+        </div>
+        <!-------------------------------------        예매 박스 ---------------->
+        <div class="midbox">
+            <div class="targetbox1 targetbox">
+                <div class="targetheader"><img src="img/img6.jpg" alt=""></div>
+                <div class="targetmid">
+                    <div class="title">코리안 팝 오케스트라</div>
+                    <div class="titlebottom">2020/05/11</div>
+                </div>
+                <div class="targetfooter">
+                    <div class="targetfooterleft"><a href="account-confirm.html">공연예매</a></div>
+                    <div class="targetfooterright">자세히</div>
+                </div>
+            </div>
+            <div class="targetbox2 targetbox">
+                <div class="targetheader"><img src="img/img5.jpg" alt=""></div>
+                <div class="targetmid">
+                    <div class="title">슈퍼 듀오 시리즈</div>
+                    <div class="titlebottom">2020/05/11</div>
+                </div>
+                <div class="targetfooter">
+                    <div class="targetfooterleft"><a href="account-confirm.html">공연예매</a></div>
+                    <div class="targetfooterright">자세히</div>
+                </div>
+            </div>
+            <div class="targetbox3 targetbox">
+                <div class="targetheader"><img src="img/img4.jpg" alt=""></div>
+                <div class="targetmid">
+                    <div class="title">코로나 극복 희망 콘서트</div>
+                    <div class="titlebottom">2020/05/11</div>
+                </div>
+                <div class="targetfooter">
+                    <div class="targetfooterleft"><a href="account-confirm.html">공연예매</a></div>
+                    <div class="targetfooterright">자세히</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--       footer            -->
+    <div id="footer">
+
+    </div>
+</body></html>

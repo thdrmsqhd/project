@@ -1,0 +1,46 @@
+
+    /*        footer    */
+        #footer {
+            color: darkgray;
+            width: 100%;
+            height: 150px;
+            box-sizing: border-box;
+            margin-top: -5px;
+            font-family: 'Noto Sans KR', sans-serif;
+            padding-left: 15%;
+            margin: 0 auto;
+            
+            float: left;
+            background: black;
+        }
+
+       
+
+        #footerText {
+            
+            font-weight: bold;
+            
+        }
+
+
+        #footerInfomatoin2 {
+            
+           padding-top: 30px;
+            float: left;
+            margin-left: 10px;
+            font-weight: bold;
+            
+        }
+
+        #footerText a {
+            list-style-type: none;
+            display: block;
+            margin: 10px;
+            float: right;
+            line-height: 5px;
+            font-weight: bold;
+            
+        }
+      
+
+/*        footer    */

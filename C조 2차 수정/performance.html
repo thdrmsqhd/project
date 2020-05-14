@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/side bar1.css">
+    <script src="js/side bar1.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .leftbox{
+            width: 15%;
+            height: 1000px;
+            float: left;
+        }
+        
+        /*        바디 css */
+        .e-nav {
+            display: block;
+        }
+
+        .e-logo1>a>img{
+            margin-top: 110px;
+            width: 100%;
+            height: 125px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #777;
+            display: block;
+
+
+        }
+
+        a:hover {
+            color: red;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+
+        }
+
+        li {
+            list-style: none;
+            display: block;
+        }
+
+        #e-wrap {
+            margin-left: 0px;
+            margin-top: 0px;
+            width: 100%;
+        }
+
+        #e-wrap .e-etc {
+            /*    height: 40px;*/
+            line-height: 40px;
+            background: white;
+            text-indent: 10px;
+            border-top: 1px solid #f2f2f2;
+            border-bottom: 1px solid #f2f2f2;
+            font-size: 1.1em;
+            display: block;
+        }
+
+        .e-11 {
+            display: block;
+            line-height: 30px;
+            text-indent: 25px;
+            cursor: pointer;
+            background: #f2f2f2;
+
+        }
+
+        /* 검색어 입력창  버튼    */
+        #search {
+            border-radius: 5px 5px 5px 5px;
+            width: 80%;
+        }
+
+        #search2 {
+            width: 20%;
+            height: 10px;
+            background: white;
+            border: 1px;
+        }
+
+        #b-menu {
+            width: 15%;
+            height: 1200px;
+            float: left;
+        }
+
+        /*        좌측 메뉴 전체*/
+
+        #b-logo {
+            width: 100%;
+            height: 200px;
+            border: solid 1px black;
+        }
+
+        /*        좌측 상단 로고 */
+
+
+
+
+        #b-l-menu {
+            width: 100%;
+            height: 1000px;
+            background-color: rgb(217, 212, 208);
+            border: solid 1px black;
+
+        }
+
+        /*        좌측 하단 메뉴바*/
+
+        #input {
+            padding-left: 10px;
+        }
+
+        #input>input {
+            margin-top: 20px;
+            width: 70%;
+            border-radius: 6px;
+        }
+
+        /*        검색*/
+
+
+        #b-thum {
+            float: left;
+            width: 85%;
+            height: 1200px;
+/*            background-color: rgb(217, 212, 208);*/
+
+
+        }
+
+        /*        우측 썸네일(공연 정보)*/
+
+        .b-img {
+            width: 18%;
+            height: 300px;
+            margin-left: 30px;
+            margin-top: 80px;
+            float: left;
+            padding-bottom: 80px;
+
+        }
+
+        /*        우측 섬네일 1/4크기씩 */
+        .b-img>img {
+            width: 100%;
+            height: 300px;
+        }
+
+        /*        우측 섬네일 중 이미지만*/
+        .b-img>.b-img-d {
+            width: 100%;
+            height: 85px;
+/*            background: rgb(217, 212, 208);    */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            /* 라인수 */
+            -webkit-box-orient: vertical;
+            word-wrap: break-word;
+
+        }
+
+        /*        우측 섬네일 중 글씨*/
+
+        #pop {
+            width: 60%;
+            height: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+            display: none;
+            opacity: 1;
+            z-index: 1;
+            position: absolute;
+        }
+
+        #pop1 {
+            background-image: url(img/per/perfor1.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            position: absolute;
+            box-sizing: border-box;
+            box-shadow: 0, 0, 0, 25px;
+        }
+
+        #pop1>#btn1 {
+            width: 80px;
+            height: 80px;
+            background: rgb(42, 82, 89);
+            color: white;
+            position: absolute;
+            top: 90%;
+            left: 80%;
+        }
+
+        #pop1>#btn2 {
+            width: 80px;
+            height: 80px;
+            background: rgb(42, 82, 89);
+            color: white;
+            position: absolute;
+            top: 90%;
+            left: 90%;
+
+        }
+
+        #pop2 {
+            background-image: url(img/per/perfor2.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+
+            box-sizing: border-box;
+            box-shadow: 0, 0, 0, 25px;
+        }
+       
+    </style>
+    <script>
+        //<!--    제이쿼리 함수 클릭시 메뉴 숨김 보이기 -->
+        $(function() {
+            $(".e-nav").hide();
+            $(".e-etc>a").click(function() {
+
+                $(".e-nav").each(function() {
+                    console.log($(this).css("display"));
+                    if ($(this).css("display") == "block") {
+                        $(this).stop().hide(250);
+                    }
+
+                }); // sub each end
+                $(this).next().stop().show(550);
+
+            });
+        }); // jQuery end
+
+    </script>
+    <link rel="stylesheet" href="css/footerex.css">
+    <script>
+      $(function(){
+          $("#footer").load("footerex.html")
+      })
+      </script>
+</head>
+
+<body>
+   
+    <div id="b-warrap">
+         <div class="leftbox">
+        <div id="nav">
+        <div id="e-logo">
+            <h1 class="e-logo1">
+                <a href="#" alt="엘지아트센터 로고" title="LG ARTS CENTER">
+                    <img src="img/대전아트센터 로고 배경없음3.png" alt="">
+                </a>
+            </h1>
+        </div>
+<!--이미지로고 및 이미지링크 -->
+        <div id="searchbar">
+            <input id="search" type="text" placeholder="검색어 입력"><button id="search2" class="glyphicon glyphicon-search" aria-hidden="true"></button>
+        </div>
+<!--검색어입력창        -->
+        <div id="e-wrap">
+
+            <ul class="sidebar">
+
+                <li class="e-etc" title="로그인">
+                    <a href="login.html">로그인</a>
+                </li>
+
+                <li class="e-etc" title="회원가입">
+                    <a href="joinin.html">회원가입</a>
+                </li>
+
+                <li class="e-etc" title="LG아트센터 소개">
+                    <a href="intro.html" class="etc1" title="대전아트센터 소개">대전아트센터 소개</a>
+                </li>
+
+                <li class="e-etc">
+                    <a href="account.html" class="etc2" title="공연/예매">공연/예매</a>
+                    <ul class="e-nav">
+                        <li class="e-11">
+                            <a href="performance.html" title="공연 소개">공연 소개</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="account.html" title="예매 하기">예매 하기</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="account-confirm.html" title="예매 확인 / 취소">예매 확인 / 취소 </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="e-etc">
+                    <a href="#" class="etc2" title="이용 안내">이용 안내</a>
+                    <ul class="e-nav">
+                        <li class="e-11">
+                            <a href="notice.html" title="공지사항">공지사항</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="#" title="객석 안내">객석 안내</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="root.html" title="오시는 길">오시는 길</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="aroundkichen.html" title="주변 식당 안내">주변 식당 안내</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="e-etc">
+                    <a href="#" class="etc2" title="커뮤니티">커뮤니티</a>
+                    <ul class="e-nav">
+                        <li class="e-11">
+                            <a href="event_page.html" title="이벤트">이벤트</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="review_page.html" title="관람후기">관람후기</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+    </div>
+
+        <div id="b-mid">
+
+
+
+        </div>
+        <!--공연 소개 슬라이드.-->
+
+
+
+        <div id="b-thum">
+
+            <div class="b-img" id="b-img1">
+                <img src="img/img2.gif">
+                <div class="b-img-d"></div>
+
+            </div>
+
+
+            <div class="b-img" id="b-img2"> <img src="img/img1.jpg">
+                <div class="b-img-d"> </div>
+            </div>
+
+
+            <div class="b-img"> <img src="img/img3.jpg"><a href="#"></a>
+                <div class="b-img-d">
+
+                </div>
+            </div>
+
+            <div class="b-img"> <img src="img/img4.jpg">
+                <div class="b-img-d">
+
+                </div>
+            </div>
+
+            <div class="b-img"> <img src="img/img5.jpg">
+                <div class="b-img-d">
+
+                </div>
+            </div>
+
+
+            <div class="b-img"> <img src="img/img6.jpg">
+                <div class="b-img-d">
+                    
+                </div>
+            </div>
+
+            <div class="b-img"> <img src="img/img7.gif">
+                <div class="b-img-d">
+
+                </div>
+            </div>
+
+
+            <div class="b-img"> <img src="img/img8.jpg">
+                <div class="b-img-d">
+
+                </div>
+            </div>
+
+
+            <div class="b-img"> <img src="img/img9.jpg">
+                <div class="b-img-d">
+
+                </div>
+            </div>
+
+
+
+            <div class="b-img"> <img src="img/img10.jpg">
+                <div class="b-img-d">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pop">
+        <div id="pop1">
+            <button id="btn1"><a href="account.html"> 예약하기 </a></button>
+            <button id="btn2"> 상세보기 </button></div>
+        <div id="pop2"> </div>
+        <div id="pop3"> </div>
+        <div id="pop4"> </div>
+        <div id="pop5"> </div>
+        <div id="pop6"> </div>
+        <div id="pop7"> </div>
+        <div id="pop8"> </div>
+    </div>
+          <!--       footer            -->
+        <div id="footer">
+            <div id="whiteBox">
+                <div id="footerText">
+                    <ul>
+                        <li>회사소개</li>
+                        <li>환불규정</li>
+                        <li>사업자등록번호</li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div id="footerInfomation">고객센터 1600-0000&nbsp;&nbsp;|&nbsp;&nbsp;영업시간 : 오전 9시 ~ 새벽 3시 &nbsp;|&nbsp; 점심시간:&nbsp;오후&nbsp;12시&nbsp;~오후&nbsp;1시
+                </div>
+                <div id="footerInfomatoin2">
+                    <br>㈜REQUISE<br><br>
+                    <small> 주소 : 강원도 강릉시 연곡면 홍질목길 55-29<br>
+                        대표이사 : 고길동 | 사업자등록번호: 742-86-00224<br>
+                        통신판매번호 : 2017-서울강남-01779 | 관광사업자 등록번호: 제1026-24호<br>
+                        전화번호☎ : 1670-6250<br>
+                        이메일 : helper@goodchoice.kr<br>
+                        Copyright GC COMPANY Corp. All rights reserved.<br></small>
+                </div>
+                <div id="icons">
+                    <a href="#"><img src="../img/sns_icon_1.png"></a>
+                    <a href="#"><img src="../img/sns_icon_2.png"></a>
+                    <a href="#"><img src="../img/sns_icon_3.png"></a>
+                    <a href="#"><img src="../img/sns_icon_4.png"></a>
+                    <a href="#"><img src="../img/sns_icon_5.png"></a>
+                    
+                </div>
+            </div>
+        </div>
+    <div id="footer"></div>
+    <!--공연 하고있는것 예정 등.-->
+    <script>
+        $("#b-img1 img").click(function() {
+            $("#pop").css({
+                display: "block"
+            });
+            $("#b-warrap").css({
+                opacity: 0.2
+            });
+
+
+            //    $("#modil1").click(function(){
+            //        $("modal1").hide();
+        });
+
+        $("#pop").click(function() {
+            $(this).css({
+                display: "none"
+            });
+            $("#b-warrap").css({
+                opacity: 1
+            })
+        })
+    </script>
+
+</body></html>

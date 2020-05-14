@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /*-------------------좌측 헤더 부분 예상 위치------------------------------------*/
+
+        
+        .leftbox{
+            width: 15%;
+            height: 1000px;
+            float: left;
+        }
+        
+        /*        바디 css */
+        .e-nav {
+            display: block;
+        }
+
+        .e-logo1>a>img{
+            margin-top: 110px;
+            width: 100%;
+            height: 125px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #777;
+            display: block;
+
+
+        }
+
+        a:hover {
+            color: red;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+
+        }
+
+        li {
+            list-style: none;
+            display: block;
+        }
+
+        #e-wrap {
+            margin-left: 0px;
+            margin-top: 0px;
+            width: 100%;
+        }
+
+        #e-wrap .e-etc {
+            /*    height: 40px;*/
+            line-height: 40px;
+            background: white;
+            text-indent: 10px;
+            border-top: 1px solid #f2f2f2;
+            border-bottom: 1px solid #f2f2f2;
+            font-size: 1.1em;
+            display: block;
+        }
+
+        .e-11 {
+            display: block;
+            line-height: 30px;
+            text-indent: 25px;
+            cursor: pointer;
+            background: #f2f2f2;
+
+        }
+
+        /* 검색어 입력창  버튼    */
+        #search {
+            border-radius: 5px 5px 5px 5px;
+            width: 80%;
+        }
+
+        #search2 {
+            width: 20%;
+            height: 10px;
+            background: white;
+            border: 1px;
+        }
+
+        /*검색어 입력창 버튼        */
+
+        
+
+        /*-------------------본문 박스  위치-------------------------------------------*/
+        .rightbox {
+            float: right;
+            width: 85%;
+            height: 1100px;
+            background: rgb(244, 244, 244);
+        }
+
+        /*-------------------본문 상단 박스 위치-------------------------------------------*/
+        .top {
+            width: 100%;
+            height: 250px;
+            display: block;
+        }
+
+        .topheader {
+            display: block;
+            background: white;
+            width: 100%;
+            height: 80px;
+        }
+
+        .topbottom {
+            display: block;
+            background: white;
+            width: 100%;
+            height: 150px;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+        }
+
+        .topbox {
+            width: 8%;
+            height: 125px;
+            background: white;
+            float: left;
+            margin-top: 1%;
+            margin-left: 1%;
+            border-radius: 00%;
+            line-height: 125px;
+            text-align: center;
+            font-weight: bold;
+
+            font-size: 1.5em;
+        }
+
+        .topleftbox1 {
+            background: rgb(211, 0, 65);
+            color: white;
+            overflow: hidden;
+
+        }
+
+        .topheaderleft {
+            width: 50%;
+            height: 80px;
+            float: left;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 100px;
+            margin-left: 15px;
+            overflow: hidden;
+        }
+
+        .topboxright {
+            float: right;
+            margin-top: 50px;
+            margin-right: 55px;
+            width: 10%;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border: 1px solid gray;
+            border-radius: 50px 50px 50px 50px;
+            background: gray;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /*-------------------본문 중단 박스 위치-------------------------------------------*/
+        .midbox {
+            
+            width: 90%;
+            height: 550px;
+            margin: 0 auto;
+
+
+        }
+
+        /*-------------------푸터 박스 위치-------------------------------------------*/
+        .sit {
+            width: 70%;
+            height: 550px;
+
+            float: left;
+        }
+
+        
+        
+        .sittop {
+            height: 450px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .chir {
+            height: 450px;
+            width: 30%;
+            border: 3px solid silver;
+            display: inline-block;
+            margin-left: 22px;
+        }
+
+        .sitbot {
+            width: 50%;
+            height: 100px;
+            margin: 0 auto;
+            margin-top: 20px;
+            display: block;
+            background: white;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+            font-size: 2em;
+            box-shadow: 3px 3px 10px rgba(0,0,50,0.4);
+        }
+
+        .chirleft {
+            border-radius: 50% 0% 00% 00%;
+            box-sizing: border-box;
+        }
+
+        .chirright {
+            border-radius: 0% 50% 00% 00%;
+        }
+/*-------------------- 우측 인포메이션--------------------------------------------*/
+        .info{
+            float: left;
+            margin-left: 2%;
+            width: 25%;
+/*            border: 1px solid black;*/
+            box-shadow: 3px 9px 10px rgba(0,0,50,0.4);
+        }
+        .infomain{
+            font-weight: bold;
+            font-size: 1.8em;
+        }
+        .infotitle{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            
+            font-size: 1.2em;
+            
+
+        }
+        .infomid{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            font-weight: bold;
+            font-size: 1.5em;
+            
+
+        }
+        .infobot{
+            width: 90%;
+            height: 50px;
+            line-height: 50px;
+            text-align: right;
+            border-bottom: 1px solid gray;
+
+        }
+        .infofotterTop{
+            width: 90%;
+            height: 50px;
+            border-top: 1px solid gray;
+            text-align: left;
+            color: gray;
+            overflow: hidden;
+            font-size: 0.8em;
+        }
+        .infofotterBot{
+            width: 80%;
+            height: 50px;
+            margin-left: 10%;
+            line-height: 50px;
+            text-align: center;
+            color: white;
+            background: rgb(211, 0, 65);
+            border: 4px solid rgb(211, 0, 65);
+        }
+        .infofotterBot a{
+            color: white;
+            
+        }
+        .infofotterBot:hover{
+            background: rgb(191, 0, 85);
+        }
+        .concert{
+            width: 80%;
+            height: 150px;
+            
+            float: left;
+            margin-left: 5%;
+        }
+        
+        .concertimg{
+            width: 20%;
+            height: 150px;
+            
+            float: left;
+        }
+        
+        .concertimg>img{
+            width: 50%;
+            height: 150px;
+        }
+        
+        .concerText{
+            width: 70%;
+            height: 100px;
+            float: left;
+            
+            margin-top: 2%;
+            margin-left: 2%;
+            overflow: hidden;
+        }
+        .cbox{
+            width: 
+        }
+    </style>
+      <script src="js/side%20bar1.js"></script>
+    <link rel="stylesheet" href="css/footerex.css">
+    <script>
+      $(function(){
+          $("#footer").load("footerex.html")
+      })
+      </script>
+</head>
+
+<body>
+    <div class="leftbox">
+        <div id="nav">
+        <div id="e-logo">
+            <h1 class="e-logo1">
+                <a href="#" alt="엘지아트센터 로고" title="LG ARTS CENTER">
+                    <img src="img/대전아트센터 로고 배경없음3.png" alt="">
+                </a>
+            </h1>
+        </div>
+<!--이미지로고 및 이미지링크 -->
+        <div id="searchbar">
+            <input id="search" type="text" placeholder="검색어 입력"><button id="search2" class="glyphicon glyphicon-search" aria-hidden="true"></button>
+        </div>
+<!--검색어입력창        -->
+        <div id="e-wrap">
+
+            <ul class="sidebar">
+
+                <li class="e-etc" title="로그인">
+                    <a href="login.html">로그인</a>
+                </li>
+
+                <li class="e-etc" title="회원가입">
+                    <a href="joinin.html">회원가입</a>
+                </li>
+
+                <li class="e-etc" title="LG아트센터 소개">
+                    <a href="intro.html" class="etc1" title="대전아트센터 소개">대전아트센터 소개</a>
+                </li>
+
+                <li class="e-etc">
+                    <a href="account.html" class="etc2" title="공연/예매">공연/예매</a>
+                    <ul class="e-nav">
+                        <li class="e-11">
+                            <a href="performance.html" title="공연 소개">공연 소개</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="account.html" title="예매 하기">예매 하기</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="account-confirm.html" title="예매 확인 / 취소">예매 확인 / 취소 </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="e-etc">
+                    <a href="notice.html" class="etc2" title="이용 안내">이용 안내</a>
+                    <ul class="e-nav">
+                        <li class="e-11">
+                            <a href="notice.html" title="공지사항">공지사항</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="#" title="객석 안내">객석 안내</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="root.html" title="오시는 길">오시는 길</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="aroundkichen.html" title="주변 식당 안내">주변 식당 안내</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="e-etc">
+                    <a href="#" class="etc2" title="커뮤니티">커뮤니티</a>
+                    <ul class="e-nav">
+                        <li class="e-11">
+                            <a href="event_page.html" title="이벤트">이벤트</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="review_page.html" title="관람후기">관람후기</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+    </div>
+<!--    사이드 바 메뉴들 -->
+    <div class="rightbox">
+        <!-------------------------------------  최상단 박스 ---------------->
+        <div class="top">
+            <div class="topheader">
+                <div class="topheaderleft">공연 예매 내역 안내</div>
+                
+            </div>
+            <!-------------------------------------        상단 박스 ---------------->
+            <div class="topbottom">
+                <div class="topbox topleftbox1">좌석 선택 </div>
+                <div class="concert">
+                    <div class="concertimg"><img src="img/img2.gif" alt=""></div>
+                    <div class="concerText"> 이 공연은 1998 지식의 전수보다 경험의 공유를<br>이 공연은 1998 지식의 전수보다 경험의 공유를이 공연은 1998 지식의 전수보다<br> 경험의 공유를이 공연은 1998 지식의 전수보다 경험의 공유를 </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------------------------        예매 박스 ---------------->
+        
+        <div class="midbox">
+            <div class="sit">
+                <div class="sittop">
+                    <div class="chir chirleft">
+                        <div class="cbox"></div>
+                    </div>
+                    <div class="chir">
+
+                    </div>
+                    <div class="chir chirright">
+                        <div class="chirtable1">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="sitbot">STAGE</div>
+            </div>
+            <div class="info">
+                <span class="infomain">&nbsp;티켓정보</span>
+                <div class="infotop">
+                    <div class="infotitle">공연 정보</div>
+                    <div class="infomid">&nbsp;11시 콘서트</div>
+                    <div class="infobot">2020/05/18 19:00~21:00</div>
+                </div>
+                <div class="infotop">
+                    <div class="infotitle">예매자 정보</div>
+                    <div class="infomid">&nbsp;이름: 000</div>
+                    <div class="infobot">예매번호: GHIK87KJASD</div>
+                </div>
+                <div class="infotop">
+                        <div class="infotitle">좌석 정보</div>
+                    <div class="infomid">&nbsp;D열 15번</div>
+                </div>
+                <div class="infobox infofotter">
+                    <div class="infofotterTop">
+                    &nbsp;예매 완료시 좌석 변경이 불가능 합니다.<br>
+                    &nbsp;좌석을 다시 한 번 확인해주세요.</div>
+                    <div class="infofotterBot"><a href="account-check.html">예매 완료 하기</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+      
+</body>
+
+</html>

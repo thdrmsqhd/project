@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title>Review_page</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/review_page02.css">
+
+    <!-- 부트스트랩 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/side%20bar1.css">
+    <script src="js/side%20bar1.js"></script>
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/footerex.css">
+    <script>
+        $(function(){
+            $("#footer").load("footerex.html")
+        })  
+    </script>
+  </head>
+  <body>
+      <div class="leftbox">
+        <div id="nav">
+        <div id="e-logo">
+            <h1 class="e-logo1">
+                <a href="#" alt="엘지아트센터 로고" title="LG ARTS CENTER">
+                    <img src="img/대전아트센터 로고 배경없음3.png" alt="">
+                </a>
+            </h1>
+        </div>
+<!--이미지로고 및 이미지링크 -->
+        <div id="searchbar">
+            <input id="search" type="text" placeholder="검색어 입력"><button id="search2" class="glyphicon glyphicon-search" aria-hidden="true"></button>
+        </div>
+<!--검색어입력창        -->
+        <div id="e-wrap">
+
+            <ul class="sidebar">
+
+                <li class="e-etc" title="로그인">
+                    <a href="login.html">로그인</a>
+                </li>
+
+                <li class="e-etc" title="회원가입">
+                    <a href="joinin.html">회원가입</a>
+                </li>
+
+                <li class="e-etc" title="LG아트센터 소개">
+                    <a href="intro.html" class="etc1" title="대전아트센터 소개">대전아트센터 소개</a>
+                </li>
+
+                <li class="e-etc">
+                    <a href="account.html" class="etc2" title="공연/예매">공연/예매</a>
+                    <ul class="e-nav">
+                        <li class="e-11">
+                            <a href="#" title="공연 소개">공연 소개</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="account.html" title="예매 하기">예매 하기</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="account-confirm.html" title="예매 확인 / 취소">예매 확인 / 취소 </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="e-etc">
+                    <a href="#" class="etc2" title="이용 안내">이용 안내</a>
+                    <ul class="e-nav">
+                        <li class="e-11">
+                            <a href="notice.html" title="공지사항">공지사항</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="#" title="객석 안내">객석 안내</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="root.html" title="오시는 길">오시는 길</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="aroundkichen.html" title="주변 식당 안내">주변 식당 안내</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="e-etc">
+                    <a href="#" class="etc2" title="커뮤니티">커뮤니티</a>
+                    <ul class="e-nav">
+                        <li class="e-11">
+                            <a href="event_page.html" title="이벤트">이벤트</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="review_page.html" title="관람후기">관람후기</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+    </div>
+   <div class="rightbox">
+    <!--   container영역 시작-->
+    <div id="A_container">
+<!--       navi 영역 시작-->
+        <div id="A_navi">
+            <div id="A_navil">
+                <a href="./review_page.html" id="A_navi_banner"><span id="A_span1">관람</span><span id="A_span2">후기</span></a>
+            </div>
+<!--
+            <div id="A_navir">
+                <div id="A_navirr">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </div>
+            </div>
+-->
+        </div>
+<!--        navi 영역 끝-->
+<!--main 영역 시작-->
+        <div id="A_mainwrap">
+            <div id="A_main">
+<!--               main-table영역 시작-->
+                <div id="A_maintable">
+                    <table>
+                        <tr>
+                            <td id="A_t1"><a href="#">595</a></td>
+                            <td id="A_t2"><a href="#">화음챔버오케스트라 현대음악 렉처 콘서트 시리즈 Ⅰ_ 티켓오픈안내</a></td>
+                            <td id="A_t3"><a href="#">2020.05.08</a></td>
+                            <td id="A_t4"><a href="#">124</a></td>
+                        </tr>
+                        <tr>
+                            <td id="A_t1"><a href="#">595</a></td>
+                            <td id="A_t2"><a href="#">화음챔버오케스트라 현대음악 렉처 콘서트 시리즈 Ⅰ_ 티켓오픈안내</a></td>
+                            <td id="A_t3"><a href="#">2020.05.08</a></td>
+                            <td id="A_t4"><a href="#">124</a></td>
+                        </tr>
+                        <tr>
+                            <td id="A_t1"><a href="#">595</a></td>
+                            <td id="A_t2"><a href="#">화음챔버오케스트라 현대음악 렉처 콘서트 시리즈 Ⅰ_ 티켓오픈안내</a></td>
+                            <td id="A_t3"><a href="#">2020.05.08</a></td>
+                            <td id="A_t4"><a href="#">124</a></td>
+                        </tr>
+                        <tr>
+                            <td id="A_t1"><a href="#">595</a></td>
+                            <td id="A_t2"><a href="#">화음챔버오케스트라 현대음악 렉처 콘서트 시리즈 Ⅰ_ 티켓오픈안내</a></td>
+                            <td id="A_t3"><a href="#">2020.05.08</a></td>
+                            <td id="A_t4"><a href="#">124</a></td>
+                        </tr>
+                        <tr>
+                            <td id="A_t1"><a href="#">595</a></td>
+                            <td id="A_t2"><a href="#">화음챔버오케스트라 현대음악 렉처 콘서트 시리즈 Ⅰ_ 티켓오픈안내</a></td>
+                            <td id="A_t3"><a href="#">2020.05.08</a></td>
+                            <td id="A_t4"><a href="#">124</a></td>
+                        </tr>
+                        <tr>
+                            <td id="A_t1"><a href="#">595</a></td>
+                            <td id="A_t2"><a href="#">화음챔버오케스트라 현대음악 렉처 콘서트 시리즈 Ⅰ_ 티켓오픈안내</a></td>
+                            <td id="A_t3"><a href="#">2020.05.08</a></td>
+                            <td id="A_t4"><a href="#">124</a></td>
+                        </tr>
+                        <tr>
+                            <td id="A_t1"><a href="#">595</a></td>
+                            <td id="A_t2"><a href="#">화음챔버오케스트라 현대음악 렉처 콘서트 시리즈 Ⅰ_ 티켓오픈안내</a></td>
+                            <td id="A_t3"><a href="#">2020.05.08</a></td>
+                            <td id="A_t4"><a href="#">124</a></td>
+                        </tr>
+                        <tr>
+                            <td id="A_t1"><a href="#">595</a></td>
+                            <td id="A_t2"><a href="#">화음챔버오케스트라 현대음악 렉처 콘서트 시리즈 Ⅰ_ 티켓오픈안내</a></td>
+                            <td id="A_t3"><a href="#">2020.05.08</a></td>
+                            <td id="A_t4"><a href="#">124</a></td>
+                        </tr>
+                        <tr>
+                            <td id="A_t1"><a href="#">595</a></td>
+                            <td id="A_t2"><a href="#">화음챔버오케스트라 현대음악 렉처 콘서트 시리즈 Ⅰ_ 티켓오픈안내</a></td>
+                            <td id="A_t3"><a href="#">2020.05.08</a></td>
+                            <td id="A_t4"><a href="#">124</a></td>
+                        </tr>
+                        <tr>
+                            <td id="A_t1"><a href="#">595</a></td>
+                            <td id="A_t2"><a href="#">화음챔버오케스트라 현대음악 렉처 콘서트 시리즈 Ⅰ_ 티켓오픈안내</a></td>
+                            <td id="A_t3"><a href="#">2020.05.08</a></td>
+                            <td id="A_t4"><a href="#">124</a></td>
+                        </tr>
+                    </table>
+                </div>
+<!--                main-table영역끝-->
+                <div id="A_write">
+                    <div id="A_writeb">
+                        <a href="#"><button id="A_button1">글작성</button></a>
+                    </div>
+                </div>
+<!--               mainbar영역시작-->
+                <div id="A_main_bar">
+                   <div class="A_page">
+                       <ul class="A_pagination modal">
+                           <li><a href="./review_page.html" class="first">처음 페이지</a></li>
+                           <li><a href="#" class="arrow-left"></a></li>
+                           <li><a href="./review_page.html" class="num">1</a></li>
+                           <li><a href="#" class="num" >2</a></li>
+                           <li><a href="#" class="num">3</a></li>
+                           <li><a href="#" class="num">4</a></li>
+                           <li><a href="#" class="num">5</a></li>
+                           <li><a href="#" class="num">6</a></li>
+                           <li><a href="#" class="num">7</a></li>
+                           <li><a href="#" class="num">8</a></li>
+                           <li><a href="#" class="num">9</a></li>
+                           <li><a href="./review_page_last.html" class="active num">9</a></li>
+                           <li><a href="#" class="arrow-right">>></a></li>
+                           <li><a href="#" class="last">끝 페이지</a></li>
+                       </ul>
+                   </div>
+               
+                </div>
+                <!--                    mainbar 영역끝-->
+<!--                Amain i 영역시작-->
+                <div id="A_mainiw">
+                    <div id="A_maini">
+                        <select>
+                            <option>전체</option>
+                            <option>제목</option>
+                            <option>내용</option>
+                        </select>
+                        <input type="text">
+                        <button id="A_button2">조회</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    </div>
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   </div>
+   
+   
+   <div id="footer"></div>
+   
+   
+   
+   
+   
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

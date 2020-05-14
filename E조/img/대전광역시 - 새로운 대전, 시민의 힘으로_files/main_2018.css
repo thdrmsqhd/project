@@ -1,0 +1,1223 @@
+@charset "utf-8";
+
+.screen_rolling{display:none;position:fixed;top:200px;z-index:888}
+.screen_rolling li a{display:block;width:65px;height:67px;margin:8px 5px;text-indent:-9999px;box-sizing:border-box;background:url(/images/drh/layout/index_2018/bg_rolling.png) no-repeat 0 0}
+.screen_rolling li:nth-child(2) a{background-position:0 -75px}
+.screen_rolling li:nth-child(3) a{background-position:0 -151px}
+.screen_rolling li a:hover,.screen_rolling li.active a{background-position-x:-67px}
+.screen_rolling li a:hover,.screen_rolling li a:active,.screen_rolling li a:focus{-webkit-animation:vibes2 1.5s ease;animation:vibes2 1.5s ease}
+
+/* main icon common */
+.m_search fieldset a{background:url(/images/drh/layout/index_2018/bg_icon.png) no-repeat 0 0}
+
+/* main controller common */
+.m_visualZone .bx-controls a,.m_popupZone .bx-controls a,.m_popupZone .btn_popList a,.m_propose .bx-controls a,.m_festival .bx-controls a,.m_tour .bx-controls a,.m_bann .bann_controll a{background:url(/images/drh/layout/index_2018/bg_controller.png) no-repeat 0 0}
+
+/* main more btn */
+.wrap_main .wrap_cont .more_main{position:absolute}
+.more_main{display:block;width:17px;height:17px;text-indent:-9999px;background:url(/images/drh/layout/index_2018/bg_more_main.png) no-repeat}
+.more_main.style_white{background-position:0 100%}
+
+.wrap_main h1{display:none}
+.wrap_cont,.m_header{overflow:hidden;position:relative;margin:0 auto}
+.wrap_cont a{transition:all .2s}
+
+#section1{background:url(/images/drh/layout/index_2018/bg_section_pattern01.gif) repeat 0 0}
+#section1 h2{display:none}
+.area01_01{min-height:508px;background:url(/images/drh/layout/index_2018/bg_section01.jpg) no-repeat 50% 100%}
+.area01_02{background:#fff}
+
+/* 계절별배경추가 20190404 */
+.season01{background:url(/images/drh/layout/index_2018/bg_section_pattern10.gif) repeat 0 0 !important;}
+.season01 .spring{background:url(/images/drh/layout/index_2018/bg_section04.jpg) no-repeat 50% 100% !important;}
+.season01 .spring2{background:url(/images/drh/layout/index_2018/bg_section04_2.jpg) no-repeat 50% 100% !important;}
+.season01 .summer{background:url(/images/drh/layout/index_2018/bg_section05.jpg) no-repeat 50% 100% !important;}
+.season01 .autumn{background:url(/images/drh/layout/index_2018/bg_section06.jpg) no-repeat 50% 100% !important;}
+.season01 .winter{background:url(/images/drh/layout/index_2018/bg_section07.jpg) no-repeat 50% 100% !important;}
+.season01 .holiday{background:url(/images/drh/layout/index_2018/bg_section08.jpg) no-repeat 50% 100% !important;}
+.season01 .holiday2{background:url(/images/drh/layout/index_2018/bg_section09.jpg) no-repeat 50% 100% !important;}
+
+.m_slogan{width:20%;height:82px;display:inline-block;margin-top:22px}
+.m_slogan a{display:block}
+.m_slogan .for_mo{display:none}
+
+.m_visitdj{width:16%;height:82px;display:inline-block;margin-top:22px;margin-left:105px}
+.m_visitdj a{display:block}
+.m_visitdj .for_mo{display:none}
+
+.m_weather{overflow:hidden;min-width:314px;width:31%;height:61px;margin:32px 0 25px;color:#002248;float:right}
+.m_weather p{float:left;text-align:center}
+.m_weather p:first-child{padding:20px 5px;background:url(/images/drh/layout/index_2018/bg_weather.png) no-repeat 100% bottom}
+.m_weather p span{display:inline-block}
+.m_weather .weather{width:267px;}
+.m_weather .weather .icon{margin-right:10px}
+.m_weather .weather .icon img{width:75%}
+.m_weather .weather strong{margin:0 3px 0 5px;font-size:1.6em;font-weight:400;letter-spacing:-0.1em;vertical-align:middle}
+.m_weather .weather .unit{margin-bottom:8px;font-size:1.2em;vertical-align:bottom}
+.m_weather .dust{width:267px;font-size:0.9em;}
+.m_weather .dust em,.m_weather .dust strong{font-size:1em}
+.m_weather .dust em{line-height:24px;color:#3b3b3b}
+.m_weather .dust span{margin-right:8px}
+.m_weather .dust a em:last-child{padding-left:5px;}
+.m_weather .dust strong.step01{color:#0a69a5}
+.m_weather .dust strong.step02{color:#2a3956}
+.m_weather .dust strong.step03{color:#ca4f12}
+.m_weather .dust strong.step04{color:#822121}
+
+.m_search{position:absolute;top:0;left:31.33%;width:36.5%;margin-top:32px;}
+.m_search fieldset,.m_search fieldset a{height:49px;border-radius:30px}
+.m_search fieldset{position:relative;padding:8px 85px 8px 20px;background:#fff}
+.m_search fieldset input{width:100%;height:33px;line-height:33px;padding:0 5px;color:#3e3e3e;font-size:1em;border:0}
+.m_search fieldset a{display:block;position:absolute;top:0;right:0;width:70px;text-indent:-9999px;;background-color:#17326f;background-position:100% 0}
+
+.m_visualZone{position:relative;left:20%;width:60%}
+.m_visualZone .bx-controls{position:absolute;bottom:0;width:100%;text-align:right;z-index:55}
+.m_visualZone .bx-controls .bx-pager,.m_visualZone .bx-controls a,.m_visualZone .bx-controls .bx-pager:after,.m_visualZone .bx-controls a:after{position:absolute;bottom:0;max-height:45px;line-height:50px}
+.m_visualZone .bx-controls .bx-pager,.m_visualZone .bx-controls a{display:inline-block;color:#fff;font-size:0.82em;text-align:center}
+.m_visualZone .bx-controls .bx-pager:after,.m_visualZone .bx-controls a:after{content:'';display:block;top:0;left:0;background:rgba(0,0,0,0.5);z-index:-1}
+.m_visualZone .bx-controls .bx-pager,.m_visualZone .bx-controls .bx-pager:after{width:100px}
+.m_visualZone .bx-controls a,.m_visualZone .bx-controls a:after{width:45px;text-indent:-9999px}
+.m_visualZone .bx-controls .bx-pager{right:94px}
+.m_visualZone .bx-controls a.bx-prev{right:47px;background-position:-306px -46px}
+.m_visualZone .bx-controls a.bx-next{right:0;background-position:-447px -46px}
+.m_visualZone .bx-controls a.bx-stop{background-position:-353px -46px}
+.m_visualZone .bx-controls a.bx-start{background-position:-400px -46px}
+.m_visualZone .bx-controls a.bx-stop,.m_visualZone .bx-controls a.bx-start{display:block;right:47px}
+.m_visualZone .bx-controls a.bx-stop.active,.m_visualZone .bx-controls a.bx-start.active{display:none}
+.m_visualZone .bx-controls a:hover:after,.m_visualZone .bx-controls a:active:after,.m_visualZone .bx-controls a:focus:after{background:#000}
+
+.m_link,.m_issue,.m_mayor{position:absolute;top:0;width:20%}
+.m_link{left:0}
+.m_issue,.m_mayor{right:0}
+.m_mayor{top:0}
+.m_issue{bottom:0;top:inherit}
+
+.m_link p a,.m_link p:after{height:203px}
+.m_link p{position:relative;z-index:1}
+.m_link p a,.m_link p a span{display:block}
+.m_link p a,.m_link p:after{border-top-left-radius:20px}
+.m_link p a span{margin-bottom:7px}
+.m_link p a{padding:20px 20% 0 10%;line-height:1.4em;color:#585858;font-size:0.85em;box-sizing:border-box;background:url(/images/drh/layout/index_2018/bg_link01.png) no-repeat 100% 100%;border-bottom:1px solid #fff}
+.m_link p a:hover,.m_link p a:active,.m_link p a:focus{background-color:#fff}
+.m_link p:after{content:'';display:block;position:absolute;top:0;left:0;width:100%;background:rgba(255,255,255,1);z-index:-1}
+
+.m_link ul{overflow:hidden}
+.m_link li{float:left;width:50%;border:1px solid #cbd7ed;border-top-width:0;border-right-width:0;border-bottom-width:0}
+.m_link li:nth-child(1),.m_link li:nth-child(3){border-left-width:0}
+.m_link li:nth-child(3),.m_link li:nth-child(4){border-top-width:1px}
+.m_link li a{display:block;position:relative;height:93px;padding-top:60px;color:#090909;font-size:0.9em;font-weight:bold;text-align:center;z-index:1}
+.m_link li a:before,.m_link li a:after{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%}
+.m_link li a:before{background:url(/images/drh/layout/index_2018/bg_link02.png) no-repeat 50% 0}
+.m_link li a:after{background:rgba(89,159,234,0.3);z-index:-1}
+.m_link li a:hover,.m_link li a:active,.m_link li a:focus{color:#0f2f4f;text-decoration:underline;background-position:50% 0}
+.m_link li a:hover:after,.m_link li a:active:after,.m_link li a:focus:after{background:rgba(4,90,185,0.5)}
+.m_link li a:hover:before{-webkit-animation:vibes2 2s ease infinite;animation:vibes2 1s ease infinite}
+.m_link li:nth-child(2) a:before{background-position-y:-96px}
+.m_link li:nth-child(3) a:before{background-position-y:-192px}
+.m_link li:nth-child(4) a:before{background-position-y:-288px}
+
+.m_issue p a,.m_issue p:after{height:145px}
+.m_issue p a,.m_issue p a span{display:block}
+.m_issue p a{padding:11px 26% 0 7%;line-height:1.4em;color:#fff;font-size:1.25em;letter-spacing:-0.07em;box-sizing:border-box;background:#4f95d5 url(/images/drh/layout/index_2018/bg_issue.png) no-repeat 100% 100%;}
+.m_issue p a span{margin:0 0 0 2%}
+.m_issue p a:hover,.m_issue p a:active,.m_issue p a:focus{background-color:#2d66b3}
+#m_issue .area_cont{width:1100px}
+#m_issue .area_cont{overflow:hidden}
+#m_issue .area_cont>div{position:relative;float:left;width:33.33%;background:#d0e0e7}
+#m_issue .area_cont div > strong,#m_issue .area_cont div > a.click{position:relative;display:block;height:121px;line-height:121px;text-indent:-9999px;background-color:#6f777c;background-image:url(/images/drh/layout/index_2018/tit_issue_pop01.png);background-repeat:no-repeat;background-position:0 100%}
+#m_issue .area_cont div > strong:after,#m_issue .area_cont div > a.click:after {content:'';display:block;position:absolute;right:0;bottom:0;width:265px;height:121px;background-image:url(/images/drh/layout/index_2018/bg_issue_pop01.png);background-repeat:no-repeat}
+#m_issue .area_cont .cont_issue02{background:#deedf4 !important}
+#m_issue .area_cont .cont_issue03{background:#d6e2e7 !important}
+#m_issue .area_cont .cont_issue02 > strong,#m_issue .area_cont .cont_issue02 > a.click{background-color:#767e82;background-image:url(/images/drh/layout/index_2018/tit_issue_pop02.png)}
+#m_issue .area_cont .cont_issue02 > strong:after,#m_issue .area_cont .cont_issue02 > a.click:after{background-image:url(/images/drh/layout/index_2018/bg_issue_pop02.png)}
+#m_issue .area_cont .cont_issue03 > strong{background-image:url(/images/drh/layout/index_2018/tit_issue_pop03.png)}
+#m_issue .area_cont .cont_issue03 > strong:after{background-image:url(/images/drh/layout/index_2018/bg_issue_pop03.png)}
+#m_issue .area_cont ul{height:535px;padding:15px 20px}
+#m_issue .area_cont li{padding:9px 0;border-top:2px solid #fff}
+#m_issue .area_cont li:first-child{border-top-width:0}
+#m_issue .area_cont li>a{display:block;padding:3px 2%}
+#m_issue .area_cont li>a:hover,#m_issue .area_cont li>a:active,#m_issue .area_cont li>a:focus{border-radius:5px;background:rgba(0,0,0,0.1)}
+#m_issue .area_cont li em,#m_issue .area_cont li strong,#m_issue .area_cont li .date,#m_issue .area_cont li .manager{overflow:hidden;display:block;text-overflow:ellipsis;white-space:nowrap}
+#m_issue .area_cont li em{line-height:21px;color:#000;font-size:0.81em;vertical-align:text-bottom}
+#m_issue .area_cont li strong{display:inline-block;max-width:100%;margin:8px 0;line-height:1.3em;color:#1a417b;font-size:1em;letter-spacing:-0.05em;border-bottom:1px solid #1a417b}
+#m_issue .area_cont li .date{margin-bottom:5px;color:#0e0f0f;font-size:0.84em;font-weight:bold;letter-spacing:-0.07em}
+#m_issue .area_cont li .manager{line-height:1.3em;color:#5f5f5f;font-size:0.79em;letter-spacing:-0.03em}
+#m_issue .area_cont li .manager .tel{padding:0 0 0 7px;font-size:0.92em}
+#m_issue .area_cont li .btn{display:inline-block;height:21px;margin-right:5px;padding:5px;line-height:1.2em;color:#fff;font-size:0.87em;font-weight:bold;background:#333}
+#m_issue .area_cont li .bg_red{background:#b06c6c}
+#m_issue .area_cont li .bg_blue{background:#364669}
+
+.m_mayor{height:245px;padding:0;line-height:1.5em;color:#2b2b2b;font-size:0.97em;font-weight:bold;box-sizing:border-box;background:url(/images/drh/layout/index_2018/bg_mayor.png) no-repeat -20px top;border-top-right-radius: 20px;}
+.m_mayor p a{display:inline-block;color:#2b2b2b;padding:80px 0 5px 20px;width:100%;box-sizing:border-box;height:100%;}
+.m_mayor span{display:block}
+.m_mayor span.slogan{margin-bottom:10px;}
+.m_mayor strong{margin-right:3px;color:#28418d}
+.m_mayor ul{overflow:hidden;position:absolute;bottom:0;left:0;width:100%;}
+.m_mayor ul li{float:left;width:60%;height:45px;border-bottom:1px solid #dce2f1}
+.m_mayor ul li:first-child{width:40%;border-right:1px solid #8f9fb0}
+.m_mayor ul li a{display:block;height:100%;line-height:48px;color:#fff;font-size:0.93em;font-weight:400;text-align:center;letter-spacing:-0.05em;background:rgba(30,55,64,0.7)}
+.m_mayor ul li a:hover,.m_mayor ul li a:active,.m_mayor ul li a:focus{background:#092a50}
+.m_mayor ul li a br{display:none}
+
+.area01_02{background:#fff}
+.area01_02 article{min-height:250px}
+.area01_02_01,.area01_02_02{float:left;padding:50px 0}
+.area01_02_01 .m_news,.area01_02_02 div:first-child{margin-bottom:10px}
+.area01_02_01{width:56%;margin-right:3%}
+.area01_02_02{width:41%}
+.area01_02_02 > div{overflow:hidden}
+.area01_02_02 > div article{position:relative;float:left;width:48.8%}
+.area01_02_02 > div article:first-child{width:44.8%;margin-right:6.4%}
+
+.m_news .more_main{top:-36px;right:7px}
+.m_news > ul{overflow:hidden;position:relative;min-height:250px}
+.m_news > ul > li{float:left;min-width:16%}
+.m_news > ul > li > h3 > a{position:relative;display:block;padding:0 1.5%;line-height:52px;color:#1b1b1b;font-size:0.97em;text-align:center;border-top-left-radius:16px;border-top-right-radius:16px}
+.m_news > ul > li div{display:none;position:absolute;left:0;width:100%}
+.m_news > ul > li div ul{height:198px;padding:25px 0 25px 2%;border-top:1px solid #636363;border-bottom:1px solid #dadada}
+.m_news > ul > li div ul li{position:relative;padding:0 80px 0 2%;line-height:1.75em;font-size:0.91em;letter-spacing:-0.02em}
+.m_news > ul > li div ul li:before{content:'';display:block;position:absolute;top:0.5em;left:0;width:4px;height:4px;background:#c2c2c2}
+.m_news > ul > li div ul li a,.m_news > ul > li div ul li span{vertical-align:text-bottom}
+.m_news > ul > li div ul li a{overflow:hidden;display:inline-block;max-width:100%;color:#2f2f2f;text-overflow:ellipsis;white-space:nowrap}
+.m_news > ul > li div ul li span{position:absolute;right:0;color:#7a7a7a;font-size:0.91em}
+.m_news > ul > li div ul li a:hover,.m_news > ul > li div ul li a:active,.m_news > ul > li div ul li a:focus{text-decoration:underline}
+.m_news > ul > li.on h3 a{color:#fff;background:#4575ca}
+.m_news > ul > li.on div{display:block}
+.m_news > ul > li h3 a:after{content:'';display:block;position:absolute;top:15px;right:0;width:1px;height:24px;background:#d7d7d7}
+.m_news > ul > li.on h3 a:after{;background:#4575ca}
+
+.m_teenager h3{padding-top:8px;line-height:45px;color:#1b1b1b;font-size:1.2em;font-weight:600;letter-spacing:-0.03em;}
+.m_teenager ul{overflow:hidden;width:180px;margin:0 auto;padding-top:95px;background:url(/images/drh/layout/index_2018/bg_teenager.png) no-repeat 50% -5px}
+.m_teenager li{float:left;width:50%}
+.m_teenager li a{display:block;text-align:center;border-radius:50%;background-color:#2e6fc7}
+.m_teenager li:first-child a{background-color:#26579a}
+.m_teenager li a:hover,.m_teenager li a:active,.m_teenager li a:focus{background-color:#ff5722}
+
+.m_popupZone h3{padding-top:2px;line-height:50px;color:#1b1b1b;font-size:1.2em;font-weight:600;letter-spacing:-0.03em}
+.m_popupZone li{overflow:hidden;border-bottom-right-radius:25px;border-bottom-left-radius:25px}
+.m_popupZone li img{width:240px;height:187px}
+.m_popupZone .btn_popList,.m_popupZone .bx-controls{position:absolute;top:17px}
+.m_popupZone .btn_popList a,.m_popupZone .bx-controls a{display:inline-block;width:18px;height:18px;margin:0 1px;text-indent:-9999px}
+.m_popupZone .btn_popList a{background-position:-457px -103px}
+.m_popupZone .btn_popList{right:4px}
+.m_popupZone .bx-controls{width:auto;right:26px}
+.m_popupZone .bx-controls div{display:inline}
+.m_popupZone .bx-controls a.bx-prev{background-position:-369px -103px}
+.m_popupZone .bx-controls a.bx-next{background-position:-391px -103px}
+.m_popupZone .bx-controls a.bx-start{background-position:-413px -103px}
+.m_popupZone .bx-controls a.bx-stop{background-position:-435px -103px}
+
+.m_story .more_main,.m_internet .more_main{top:17px;right:7px}
+.m_story,.m_internet{position:relative;padding-top:5px}
+.m_story h3,.m_internet h3{margin-bottom:14px;line-height:42px;color:#1b1b1b;font-size:1.2em;font-weight:600;letter-spacing:-0.03em}
+.m_story ul{overflow:hidden}
+.m_story li{float:left;width:29.31%;margin-left:6.035%;text-align:center}
+.m_story li:first-child{margin-left:0}
+.m_story li a,.m_internet li a{display:block;position:relative}
+.m_story li a em{display:inline-block;position:absolute;top:0;left:0;width:81px;line-height:32px;color:#fff;font-size:0.8em;text-align:center;border-bottom-right-radius:10px;background:#56a643;z-index:5}
+.m_story li a span,.m_story li a strong,.m_internet li a span,.m_internet li a strong{overflow:hidden;display:inline-block;max-width:100%}
+.m_story li a strong,.m_internet li a strong{height:45px;line-height:45px;color:#2f2f2f;font-size:0.91em;font-weight:normal;text-align:center;text-overflow:ellipsis;white-space:nowrap}
+.m_story li a img,.m_internet li a img{transition:all 0.3s linear}
+.m_story li a img{width:197px;height:131px}
+.m_story li a:hover img,.m_internet li a:hover img{-ms-transform:scale(1.1,1.1);-webkit-transform:scale(1.1,1.1);transform:scale(1.1,1.1)}
+
+.m_internet{padding:5px 1.5% 0;border-bottom:1px solid #d7d7d7}
+.m_internet .more_main{right:17px}
+.m_internet li{text-align:center}
+.m_internet li a strong{position:relative;padding-left:25px}
+.m_internet li a strong:before{content:'';display:inline-block;position:absolute;top:11px;left:0;width:20px;height:20px;background:url(/images/drh/layout/index_2018/ico_internet.png) no-repeat 0 0}
+.m_internet li a img{width:205px;height:133px}
+
+.m_sns{padding:15px 3%;border-radius:25px;background:#e6f0f3}
+.m_sns > ul{position:relative;text-align:center}
+.m_sns > ul > li,.m_sns > ul > li > h3{display:inline}
+.m_sns > ul > li > h3 > a{display:inline-block;width:36px;height:36px;text-indent:-9999px;border-radius:50%;background:url(/images/drh/layout/index_2018/bg_sns.png) no-repeat 0 0}
+.m_sns > ul > li a.on{background-position:0 -36px}
+.m_sns > ul > li a.sns_face{background-position:-36px 0}
+.m_sns > ul > li a.sns_twitter{background-position:-72px 0}
+.m_sns > ul > li a.on.sns_face{background-position:-36px -36px}
+.m_sns > ul > li a.on.sns_twitter{background-position:-72px -36px}
+.m_sns > ul > li ul{display:none;position:absolute;top:49px;left:0;width:100%}
+.m_sns > ul > li ul li,.m_sns > ul > li ul li a,.m_sns > ul > li ul li a strong,.m_sns > ul > li ul li a em,.m_sns > ul > li ul li a span{display:block}
+.m_sns > ul > li ul li strong,.m_sns > ul > li ul li em{overflow:hidden}
+.m_sns > ul > li ul li strong img{transition:all 0.3s linear;width:176px;height:117px}
+.m_sns > ul > li ul li img:hover{-ms-transform:scale(1.1,1.1);-webkit-transform:scale(1.1,1.1);transform:scale(1.1,1.1)}
+.m_sns > ul > li ul li em{max-width:100%;margin:10px 0 0 0;line-height:32px;color:#2f2f2f;font-size:0.95em;letter-spacing:-0.05em;text-overflow:ellipsis;white-space:nowrap}
+.m_sns > ul > li ul li span{color:#707070;font-size:0.75em}
+.m_sns > ul > li:first-child ul{display:block}
+
+#section2{background:url(/images/drh/layout/index_2018/bg_section_pattern02.gif) repeat 0 0}
+.area02{padding:0 0 64px;background:url(/images/drh/layout/index_2018/bg_section02.gif) no-repeat 50% 0}
+.area02 .wrap_cont{overflow:hidden;border-radius:25px}
+.area02 .m_header+.wrap_cont{margin-bottom:20px;border:2px solid #fff}
+.area02 .m_header+.wrap_cont article{min-height:301px}
+.area02 .wrap_cont article{float:left}
+.m_service{width:40%}
+.m_propose,.m_info{width:60%}
+.m_traffic,.m_welfare{width:20%}
+
+.area02 .m_header{padding:37px 0 27px}
+.area02 .m_header h2{width:440px;height:84px;margin:0 auto;text-indent:-9999px;background:url(/images/drh/layout/index_2018/tit_02.png) no-repeat 0 50%;background-size:contain}
+.area02 .m_header h2:after{content:'';display:block;position:absolute;right:20px;bottom:0;width:300px;height:111px;background:url(/images/drh/layout/index_2018/bg_tit02.png) no-repeat 0 100%}
+.m_service,.m_propose{padding:30px 2.676%}
+.m_service h3,.m_propose h3{color:#1b1b1b;font-size:1.3em;font-weight:bold;letter-spacing:-0.05em}
+.m_service p,.m_propose p{margin:15px 0 20px;line-height:1.4em;color:#585858;font-size:0.85em}
+.m_service ul,.m_propose ul{overflow:hidden}
+
+.m_service{border-right:1px solid #fff;background:rgba(255,255,255,0.3)}
+.m_service li{float:left;width:49%;margin:14px 0 0}
+.m_service li:nth-child(odd){margin-right:2%}
+.m_service li a,.m_service li a span{display:block}
+.m_service li a{padding:1px 1px 1px 37px;color:#4c4c4c;border-radius:22px;background:#b2b2b2}
+.m_service li a:hover,.m_service li a:active,.m_service li a:focus{background:#828282}
+.m_service li a span{position:relative;max-height:39px;padding-left:13px;line-height:41px;font-size:0.9em;letter-spacing:-0.03em;border-top-right-radius:22px;border-bottom-right-radius:22px;background:#fff}
+.m_service li a span:before,.m_service li a span:after{content:'';display:block;position:absolute;background:#fff}
+.m_service li a span:before{top:18px;left:-23px;width:15px;height:3px}
+.m_service li a span:after{top:12px;left:-17px;width:3px;height:15px}
+.m_service li a:hover span:before,.m_service li a:hover span:after{-webkit-animation:round 2s ease;animation:round 2s ease}
+
+.m_propose li{float:left;width:125px}
+.m_propose li a{display:block;color:#1a1a1c;font-size:0.94em;letter-spacing:-0.03em;text-align:center}
+.m_propose li a:before{content:'';display:block;width:98px;height:98px;margin:0 auto 18px;background:url(/images/drh/layout/index_2018/bg_propose.png) no-repeat}
+.m_propose li a.ico_pro02:before{background-position:-120px 0}
+.m_propose li a.ico_pro03:before{background-position:-241px 0}
+.m_propose li a.ico_pro04:before{background-position:-362px 0}
+.m_propose li a.ico_pro05:before{background-position:-482px 0}
+.m_propose li a.ico_pro06:before{background-position:-602px 0}
+.m_propose li a.ico_pro07:before{background-position:-722px 0}
+.m_propose li a.ico_pro08:before{background-position:-842px 0}
+.m_propose li a:hover:before,.m_propose li a:active:before,.m_propose li a:focus:before{background-position-y:-127px;-webkit-animation:vibes2 1.5s ease infinite;animation:vibes2 1.5s ease infinite}
+.m_propose .bx-wrapper{position:relative;margin-top:40px}
+.m_propose .bx-controls,.m_propose .bx-controls a{position:absolute}
+.m_propose .bx-controls{top:50%;width:100%}
+.m_propose .bx-controls a{display:block;width:42px;height:42px;margin-top:-35px;text-indent:-9999px;background-position:-371px -163px}
+.m_propose .bx-controls .bx-prev{left:-30px}
+.m_propose .bx-controls .bx-next{right:-30px;background-position-x:-443px}
+
+.m_traffic,.m_welfare{position:relative;min-height:263px;padding:27px 2% 8px}
+.m_traffic:before,.m_welfare:before{content:'';display:block;position:absolute}
+.m_traffic h3,.m_welfare h3{color:#fff;font-size:1.3em;letter-spacing:-0.05em}
+.m_traffic ul,.m_welfare ul{overflow:hidden}
+.m_traffic li,.m_welfare ul li{float:left;margin:3px 0}
+.m_traffic li a,.m_welfare ul li a{display:block;line-height:30px;color:#fff;font-size:0.85em;text-align:center;border-radius:15px}
+.m_traffic li a:hover,.m_traffic li a:active,.m_traffic li a:focus,.m_welfare ul li a:hover,.m_welfare ul li a:active,.m_welfare ul li a:focus{color:#4c4c4c;background:#fff}
+
+.m_traffic{background:#597893}
+.m_traffic:before{top:0;right:0;width:95px;height:95px;background:url(/images/drh/layout/index_2018/bg_traffic.png) no-repeat 0 0; background-size:100%}
+.m_traffic ul{padding:49px 0 15px}
+.m_traffic li{width:49%}
+.m_traffic li:nth-child(odd){width:48%;margin-right:3%}
+.m_traffic li:last-child{width:100%;margin-right:0}
+.m_traffic li.second{width:100%;margin-right:0}
+.m_traffic li a{background:#375d7e}
+
+.m_info{min-height:263px;background:rgba(255,255,255,0.3)}
+.m_info ul{overflow:hidden;padding:40px 2.5% 10px}
+.m_info li{float:left;width:25%}
+.m_info li a{display:block;line-height:2.4em;color:#010101;font-size:1.15em;letter-spacing:-0.05em;text-align:center}
+/*.m_info li a.ico_info02{line-height:1.2em}*/
+.m_info li a:after{content:'';display:block;width:142px;height:142px;margin:13px auto 0;background:url(/images/drh/layout/index_2018/bg_info_m01.png) no-repeat}
+.m_info li a.ico_info02:after{background-image:url(/images/drh/layout/index_2018/bg_info_m02.png)}
+.m_info li a.ico_info03:after{background-image:url(/images/drh/layout/index_2018/bg_info_m03.png)}
+.m_info li a.ico_info04:after{background-image:url(/images/drh/layout/index_2018/bg_info_m04.png)}
+.m_info li a:hover:after,.m_info li a:active:after,.m_info li a:focus:after{background-position-y:-240px;-webkit-animation:vibes 1s ease infinite;animation:vibes 1s ease infinite}
+
+.m_welfare{overflow:hidden;color:#fff;background:#7395af}
+/*.m_welfare:before{right:0;bottom:0;width:240px;height:100px;background:url(/images/drh/layout/index_2018/bg_welfare.png) no-repeat 0 0}*/
+.m_welfare ul{padding-top:15px}
+.m_welfare ul li{width:48%}
+.m_welfare ul li:nth-child(odd){margin-right:2%}
+.m_welfare ul li a{background:#5b7f9d}
+.m_welfare .btn_gender{width:240px;height:120px;position:absolute;right:0;bottom:0;}
+.m_welfare .btn_gender:after{content:'';position:absolute;right:0;bottom:0;width:100%;height:100%;}
+.m_welfare .btn_gender a{width:100%;height:100%;position:absolute;z-index:2;padding:20px;color:#fff;font-size:20px;line-height:26px;font-weight:600;background:#95bdd9 url(/images/drh/layout/index_2018/bg_welfare.png) no-repeat 90% 15px}
+.m_welfare .btn_gender a:hover{background-color:#68a2ca;}
+
+.area03_01{padding:0 0 64px;background:#ccdedc url(/images/drh/layout/index_2018/bg_section03.png) no-repeat 50% 0}
+.area03_01 .wrap_cont{overflow:hidden}
+.area03_01 .wrap_cont article{float:left;min-height:362px}
+.area03_01 .m_header{min-height:147px;text-align:center;background:url(/images/drh/layout/index_2018/bg_tit03.png) no-repeat 50% 0}
+.area03_01 .m_header h2{width:300px;height:147px;margin:0 auto;text-indent:-9999px;background:url(/images/drh/layout/index_2018/tit_03.png) no-repeat 0 50%;background-size: contain}
+.area03_01 .m_visit,.area03_01 .m_header ul{position:absolute;top:50%}
+.area03_01 .m_visit{left:26px;width:180px;height:85px;margin-top:-42px;text-indent:-9999px;background:url(/images/drh/layout/index_2018/tit_03_visit.png) no-repeat 0 0}
+.area03_01 .m_header ul{overflow:hidden;right:0;margin-top:-52px}
+.area03_01 .m_header li{float:left;width:104px;height:104px;margin:0 5px 8px}
+.area03_01 .m_header li a{display:block;height:100%;padding-top:68px;color:#fff;border-radius:50%;background:#36ac37 url(/images/drh/layout/index_2018/bg_enjoy.png) no-repeat 0 0}
+.area03_01 .m_header li:first-child a{padding-top:20px;background-position:-111px 0;background-color:#f07b42}
+.area03_01 .m_header li a:hover{background-color:#109111;-webkit-animation:vibes2 1.5s ease infinite;animation:vibes2 1.5s ease infinite}
+.area03_01 .m_header li:first-child a:hover{background-color:#e74d23}
+
+.m_tour{width:60%;background:#fff}
+.m_festival,.m_walk{width:20%;padding:30px 1.5% 0;color:#fff}
+.m_festival h3,.m_tour h3,.m_walk h3{font-size:1.3em;letter-spacing:-0.05em}
+
+.m_festival{position:relative;border-top-left-radius:25px;border-bottom-left-radius:25px;background:#ff5353}
+.m_festival h3:after{content:'';display:block;position:absolute;top:0;right:0;width:133px;height:163px;background:url(/images/drh/layout/index_2018/bg_festival.png) no-repeat;opacity:0.3;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)"}
+.m_festival .more_main{top:34px;right:20px}
+.m_festival .bx-wrapper{margin-top:35px}
+.m_festival .bx-wrapper a,.m_festival .bx-wrapper em,.m_festival .bx-wrapper strong,.m_festival .bx-wrapper span{display:block}
+.m_festival .bx-wrapper em{overflow:hidden;border-radius:50%}
+.m_festival .bx-wrapper li a{position:relative;color:#fff}
+.m_festival .bx-wrapper strong{position:absolute;top:135px;left:50%;width:100px;height:30px;margin-left:-50px;line-height:31px;color:#fff;font-size:0.9em;font-weight:normal;text-align:center;border-radius:20px;background:#b52020}
+.m_festival .bx-wrapper span{margin-top:15px;font-size:0.97em;letter-spacing:-0.03em;text-align:center}
+.m_festival .bx-wrapper li a:hover strong,.m_festival .bx-wrapper li a:active strong,.m_festival .bx-wrapper li a:focus strong{background:#292929}
+.m_festival .bx-controls{position:absolute;top:81%;left:0;width:100%}
+.m_festival .bx-controls div{text-align:center}
+.m_festival .bx-controls a{display:inline-block;width:40px;height:40px;margin:0 5px;text-indent:-9999px;border:1px solid #fff;border-radius:50%;background-color:#ff5353;background-position:-382px -229px}
+.m_festival .bx-controls a.bx-next{background-position:-431px -229px}
+.m_festival .bx-controls a:hover,.m_festival .bx-controls a:active,.m_festival .bx-controls a:focus{background-color:#b52121;-webkit-animation:moveL 1s ease infinite;animation:moveL 1s ease infinite}
+.m_festival .bx-controls a.bx-next:hover,.m_festival .bx-controls a.bx-next:active,.m_festival .bx-controls a.bx-next:focus{-webkit-animation:moveR 1s ease infinite;animation:moveR 1s ease infinite}
+
+.m_tour{position:relative;padding:20px 3.3%}
+.m_tour .more_main{top:34px;right:36px}
+.m_tour h3{color:#1b1b1b;font-weight:bold}
+.m_tour h3 span{margin:0 5px 0 -1px;color:#359f3b;font-size:1.6em}
+.m_tour li{float:left;width:166px;margin-right:0.35%}
+.m_tour li a,.m_tour li em,.m_tour li strong,.m_tour li span{display:block;text-align:center}
+.m_tour li em{overflow:hidden;position:relative;border-radius:50%}
+.m_tour li strong{padding:15px 0 8px;;color:#000;font-size:0.99em;font-weight:normal}
+.m_tour li span{line-height:1.4em;color:#703030;font-size:0.86em}
+.m_tour li a:hover .overlay,.m_tour li a:focus .overlay{display:block;opacity:1;-webkit-animation:round 2s ease;animation:round 2s ease}
+
+.m_tour .bx-wrapper{position:relative;max-width:562px !important;margin:30px auto 0}
+.m_tour .bx-controls,.m_tour .bx-controls a{position:absolute}
+.m_tour .bx-controls{top:50%;width:100%;margin-top:-53px}
+.m_tour .bx-controls a{display:block;width:42px;height:42px;text-indent:-9999px;background-position:-371px -163px}
+.m_tour .bx-controls .bx-prev{left:-48px}
+.m_tour .bx-controls .bx-next{right:-50px;background-position-x:-443px}
+
+.overlay{display:none;position:absolute;left:0;right:0;top:0;width:100%;height:100%;background-color:rgba(22,27,26,0.5);opacity:0}
+.overlay:before,.overlay:after{content:"";position:absolute;top:50%;left:50%;line-height:1.0em;background:#fff}
+.overlay:before{width:1px;height:40px;margin:-20px 0 0 -1px}
+.overlay:after {width:40px;height:1px;margin:-1px 0 0 -20px}
+
+.m_walk{border-top-right-radius:25px;border-bottom-right-radius:25px;background:#af884c}
+.m_walk ul{position:relative;padding-top:120px}
+.m_walk ul:before{content:'';display:block;position:absolute;top:0;left:50%;width:180px;height:160px;margin-left:-90px;background:url(/images/drh/layout/index_2018/bg_walk.png) no-repeat 0 0}
+.m_walk li{position:relative;margin-top:12px}
+.m_walk li a,.m_walk li a span{display:block}
+.m_walk li a{padding-left:37px;color:#222;border-radius:22px;background:#8b6c3d}
+.m_walk li a:hover,.m_walk li a:active,.m_walk li a:focus{;background:#6d4200}
+.m_walk li a span{position:relative;max-height:39px;padding-left:13px;line-height:41px;font-size:0.9em;letter-spacing:-0.03em;border:1px solid #fff;border-left-width:0;border-top-right-radius:22px;border-bottom-right-radius:22px;background:#fff}
+.m_walk li a span:before,.m_walk li a span:after{content:'';display:block;position:absolute;background:#fff}
+.m_walk li a span:before{top:18px;left:-23px;width:15px;height:3px}
+.m_walk li a span:after{top:12px;left:-17px;width:3px;height:15px}
+.m_walk li a:hover span,.m_walk li a:active span,.m_walk li a:focus span{border-color:#6d4200}
+.m_walk li a:hover span:before,.m_walk li a:hover span:after{-webkit-animation:round 2s ease;animation:round 2s ease}
+
+.area03_02{position:relative;background:#37959d}
+.area03_02,.area03_02:after,.m_text_service,.m_text_service div{min-height:287px;max-height:287px}
+.area03_02:before,.area03_02:after{content:'';display:block;position:absolute;top:55px;left:0;width:100%;background:rgba(255,255,255,0.5)}
+.area03_02:before{height:1px;z-index:2}
+.area03_02:after{top:0;width:50%;background:#1e5c97;z-index:1}
+.m_text_service{position:relative;z-index:2}
+.m_text_service,.m_text_service ul{overflow:hidden}
+.m_text_service div,.m_text_service div li{float:left}
+.m_text_service div{overflow:hidden;width:33.33%;color:#fff}
+.m_text_service h3{margin-left:-25px;line-height:55px;font-size:1.1em;text-align:center}
+.m_text_service h3:before{content:'';overflow:hidden;display:inline-block;width:38px;height:38px;margin:0 10px 2px 0;vertical-align:middle;border-radius:50%;background:url(/images/drh/layout/index_2018/bg_text_service.png) no-repeat 0 0}
+.m_text_service h3.ico_service02:before{background-position:0 -121px}
+.m_text_service h3.ico_service03:before{background-position:0 -242px}
+
+.m_text_service div:nth-child(2){background:#344976}
+.m_text_service div:nth-child(2) h3{border-bottom:1px solid rgba(255,255,255,0.5)}
+.m_text_service ul{padding:20px 9.5%}
+.m_text_service li{width:50%;margin:10px 0}
+.m_text_service li a{color:#fff;font-size:0.92em;letter-spacing:-0.03em}
+.m_text_service li a:before{content:'';display:inline-block;width:3px;height:3px;margin:0 8px 2px 0;vertical-align:middle;background:#fff}
+.m_text_service li a:hover,.m_text_service li a:active,.m_text_service li a:focus{text-decoration:underline}
+.m_text_service div:nth-child(2) li{width:60%}
+.m_text_service div:nth-child(2) li:nth-child(odd){width:40%}
+
+/* modal pop */
+.modal_pop,.modal_bg{display:none;position:fixed !important}
+.modal_bg{top:0;left:0;width:100% !important;height:100%;background:rgba(61,63,71,0.9);z-index:9997 !important}
+.modal_pop{top:50%;left:50%;background-color:#fff;z-index:9999}
+.modal_close{position:absolute;top:-48px;right:0;width:48px;height:48px;text-indent:-9999px;background:#000}
+.modal_close:after,.modal_close:before{content:'';display:block;position:absolute;top:50%;left:50%;background:#fff;transform:rotate(45deg)}
+.modal_close:before{width:26px;height:1px;margin:-1px 0 0 -13px}
+.modal_close:after{width:1px;height:26px;margin:-13px 0 0 -1px}
+
+
+/*배너*/
+.banner-site{width:100%; height:114px; background:#efefef;}
+.banner-site .logobannerC{max-width:1300px; margin:0 auto; padding:0 60px; clear:both}
+.banner-site .bbox{position:relative; padding:32px 0}
+.banner-site .listBtn {overflow: hidden;	position: absolute;	top:46px; 	right: 0; 	width:113px;	font-size: 0;}
+.banner-site .listBtn li {display: inline-block;	vertical-align: middle;}
+.banner-site .listBtn li a {display: block;	width:21px;	height:21px; 	text-indent: -9999px;	font-size: 0;	background: url(/images/drh/layout/common/btn_footer_bnnr2.png) no-repeat;}
+.banner-site .listBtn .btnPrev {background-position: 2px 0;}
+.banner-site .listBtn .btnPause {background-position: -19px 0;}
+.banner-site .listBtn .btnPlay {background-position: -79px 0;}
+.banner-site .listBtn .btnNext {background-position: -39px 0;}
+.banner-site .listBtn .btnMore {background-position: -60px 0;}
+.banner-site .listBtn li.listpaging{width:50px; color:#383838; padding:3px 5px 0 0; text-align:right; font-size:13px}
+
+.banner-site .listbanner{overflow:hidden; position:relative; float:left; width:90%; height:50px}
+.banner-site .listbanner > ul{position:absolute; top:0; left:0;}
+.banner-site .listbanner li{display:inline-block; margin:0 0 0 34px;}
+.banner-site .listbanner li:first-child{margin:0}
+
+/* effect */
+@-webkit-keyframes vibes{
+	0%{-webkit-transform:translateY(0)}
+	50%{-webkit-transform:translateY(8px)}
+	100%{-webkit-transform:translateY(0)}
+}
+@keyframes vibes{
+	0%{transform:translateY(0)}
+	50%{transform:translateY(8px)}
+	100%{transform:translateY(0)}
+}
+
+@-webkit-keyframes vibes2{
+	0% {transform:translateY(0)}
+	20% {transform:translateY(4px)}
+	40% {transform:translateY(0)}
+	60% {transform:translateY(6px)}
+	100% {transform:translateY(0)}
+}
+
+@keyframes vibes2{
+	0% {transform:translateY(0)}
+	20% {transform:translateY(4px)}
+	40% {transform:translateY(0)}
+	60% {transform:translateY(6px)}
+	100% {transform:translateY(0)}
+}
+
+@-webkit-keyframes moveL{
+	0% {transform:translateX(0)}
+	50% {transform:translateX(-6px)}
+	100% {transform:translateX(0)}
+}
+
+@keyframes moveL{
+	0% {transform:translateX(0)}
+	50% {transform:translateX(-6px)}
+	100% {transform:translateX(0)}
+}
+
+@-webkit-keyframes moveR{
+	0% {transform:translateX(0)}
+	50% {transform:translateX(6px)}
+	100% {transform:translateX(0)}
+}
+
+@keyframes moveR{
+	0% {transform:translateX(0)}
+	50% {transform:translateX(6px)}
+	100% {transform:translateX(0)}
+}
+
+@-webkit-keyframes round{
+	100%{transform:rotate(360deg)}
+}
+
+@keyframes round{
+	100%{transform:rotate(360deg)}
+}
+
+ /** screen 1280px **/
+@media screen and (max-width:1280px) {
+	.banner-site .listbanner li{display:inline-block; margin:0 0 0 27px;}
+}
+
+/** 1200px < screen **/
+@media screen and (min-width:1200px) {
+	.wrap_cont,.m_header{width:1200px}
+	.screen_rolling{display:none}
+	.banner-site .listbanner li{display:inline-block; margin:0 0 0 11px;}
+ }
+
+ /** screen < 1280px **/
+@media screen and (min-width:1201px) {
+	.screen_rolling{display:block;right:2%}
+}
+
+ /** screen < 1280px **/
+@media screen and (min-width:1201px) and (max-width:1280px) {
+	.screen_rolling{display:none}
+}
+
+/** 1024px ~ 1199px **/
+@media screen and (max-width:1199px) {
+	.wrap_cont,.m_header{width:94%}
+	.screen_rolling{display:none}
+	
+	/** 검색 & 핫이슈팝업 & 시장 **/
+	.area01_01{padding-bottom:32px;background-position-x:0}
+	.m_search{left:30%}
+	.m_weather{width:33%}
+	.m_visitdj{margin-left:60px}
+	.m_visualZone{left:inherit;width:720px;margin:0 auto 30px}
+	.m_visualZone:after{content:'';display:block;clear:both}
+	.m_link,.m_issue,.m_mayor{float:left;position:relative;top:inherit;right:inherit;bottom:inherit;left:inherit;width:25%}
+	.m_link,.m_link p,.m_link ul{width:50%}
+	.m_link{overflow:hidden}
+	.m_link p,.m_link ul{float:left}
+	.m_link p a,.m_link p:after{border-bottom-left-radius:20px}
+
+	.m_link li a{height:101px;padding-top:65px;}
+	.m_link li a:before{background-position-y:7px}
+	
+	#m_issue{width:95%;}
+	#m_issue .area_cont{width:100%;margin:0 auto}
+	.m_mayor{overflow:hidden;height:203px;background-position:0;background-size:100%;border-top-right-radius:0px;background-size:180%;}
+	.m_mayor p a{padding:37px 0 50px 25px;}
+	.m_issue p a{padding:25px 26% 178px 9%;border-radius:0;background-size:80%;border-top-right-radius: 20px;border-bottom-right-radius: 20px;}
+	
+	/* 공지 및 뉴스영역 */
+	.area01_02_01{width:54%;margin-right:2%}
+	.area01_02_02{width:44%}
+	.area01_02_02 > div article{width:47.2%}
+	.area01_02_02 > div article:first-child{margin-right:5.1%}
+	
+	/** 공지사항 & 10대뉴스 & 알림창 **/
+	.m_news > ul > li:last-child{min-width:27%}
+	.m_popupZone li img{width:100%;height:187px}
+	
+	/** STORY대전 & SNS **/
+	.m_story li{width:30.31%;margin-left:4.035%}
+	.m_story li:first-child{margin-left:1%}
+	.m_story li a img,.m_internet li a img{width:100%;height:133px}
+	.m_internet{padding:5px 0 0}
+	.m_sns{padding-right:4%;padding-left:4%}
+	.m_sns > ul > li ul li em{margin-top:7px}
+	.m_sns > ul > li ul li strong img{width:100%;height:117px}
+	
+	/** 민원서비스 & 참여신고 & 교통정보 & (각종)정보 & 복지서비스 **/
+	.area02 .m_header h2{margin-left:20%}
+	.area02 .m_header h2:after{width:270px;background-size:contain}
+	.m_service{width:43%}
+	.m_service li a span{padding-left:10px;font-size:0.87em;letter-spacing:-0.05em}
+	.m_propose{width:57%}
+	.m_propose .bx-wrapper{width:380px;margin:40px auto 0}
+	.m_traffic,.m_welfare{width:20%;padding-right:1%;padding-left:1%}
+	.m_info{width:60%}
+	.m_info ul{padding-right:2%;padding-left:2%}
+	.m_info li a:after{width:124px;height:124px;background-size:100%}
+	.m_info li a:hover:after,.m_info li a:active:after,.m_info li a:focus:after{background-position-y:-210px}
+	/*.m_welfare:before{left:-17%}*/
+	.m_welfare .btn_gender{width:100%;}
+	.m_welfare .btn_gender a{padding:25px 10px;font-size:18px;background-size:35%;background-position:90% 50%;}
+
+	/** 대전관광명소 **/
+	.m_tour .bx-wrapper{width:365px}
+	.m_tour li{margin-right:30px}	
+
+	/* 모달팝업위치 : 핫이슈 */
+	.modal_pop{top:80px !important;margin-top:0 !important}
+	
+	.m_visit{margin-left:10%}
+
+ }
+
+@media screen and (max-width:1024px) {
+.m_search{left:25%}
+.m_weather{width:38%}
+.m_visitdj{margin-left:0}
+}
+
+@media screen and (max-width:1000px) {
+.banner-site .logobannerC{padding:0 30px}
+.banner-site .listbanner li{margin:0 0 0 24px;}
+.m_weather{width:37%}
+}
+
+@media screen and (max-width:999px) {
+	.m_search{display:none;}
+	.wrap_cont,.m_header{overflow:hidden; width:90%}
+
+	/** 슬로건 & 날씨 & 비쥬얼팝업 **/
+	.area01_01{padding:25px 0 35px}
+
+	.m_slogan{width:40%;margin-top:0;height:inherit}
+	.m_slogan .for_pc{display:none !important}
+	.m_slogan .for_mo{display:block !important;width:100%;}
+
+	.m_visitdj{width:40%;margin-top:0;height:inherit}
+	.m_visitdj .for_pc{display:none !important}
+	.m_visitdj .for_mo{display:block !important;width:100%;}
+
+	.korea .for_pc{display:none !important}
+	
+	.m_weather{height:60px;margin:0 auto 25px;width:45%}
+	.m_visualZone{left:0;width:100%;margin-bottom:20px}
+	.m_visualZone li img{width:100%;height:390px}
+	.m_link p,.m_link ul{float:none;width:100%}
+	
+	/** 청사안내링크 & 핫이슈-팝업 & 시장 **/
+	.m_link,.m_issue,.m_mayor{position:relative;width:50%}
+	.m_link p a,.m_link p:after{height:108px}
+	.m_link p a{padding:15px 48% 0 6%;background-size:auto}
+	.m_link p a,.m_link p:after{border-radius:0}
+	.m_link li a{height:68px;padding:30px 0 0 65px;text-align:left}
+	.m_link li a:before{background-position:-45px 5px}
+	.m_link li:nth-child(2) a:before{background-position-y:-92px}
+	.m_link li:nth-child(3) a:before{background-position-y:-188px}
+	.m_link li:nth-child(4) a:before{background-position-y:-284px}
+	.m_issue p a,.m_issue p:after{height:108px}
+	.m_issue p a{padding:15px 0 0 6%;background-size:auto;border-bottom-right-radius:0;border-top-right-radius:0;}
+	.m_issue p a span{margin:2px 0 0 0}
+	#m_issue .area_cont > div > strong:after{background-position-x:40px}
+	.m_mayor{height:137px;padding:0;border-radius:0;background-position:0 -34px;background-size: inherit;}
+	.m_mayor p a{padding:8px 0 0 25px;}
+	.m_mayor ul{top:0;right:0;bottom:inherit;left:inherit;width:37%}
+	.m_mayor ul li,.m_mayor ul li:first-child{float:none;width:100%;height:auto;border-right-width:0}
+	.m_mayor ul li:first-child{border-bottom:1px solid #8db0d8}
+	.m_mayor ul li a{padding:10px 0}
+
+	/** STROY대전 **/
+	.area01_02_01,.area01_02_02{float:none;width:100%;margin-right:0}
+	.area01_02_01{padding:40px 0 0}
+
+	.m_story{padding:0 1%}
+	.m_story li a span{display:block}
+	
+	/** 10대뉴스 & 알림창 & SNS & 인터넷방송 **/
+	.area01_02_02{padding:25px 0 35px}
+	.area01_02_02 > div article,.area01_02_02 > div article:first-child{width:50%;padding-right:4%;padding-left:4%}
+	.area01_02_02 > div article:first-child{margin-right:0}
+	.area01_02_02 > div{border:1px solid #d7d7d7;border-right-width:0;border-left-width:0}
+	.area01_02_02 > div:first-child{border-bottom-width:0}
+	.area01_02_02 div:first-child{margin-bottom:0}
+
+	.m_popupZone,.m_sns{border-left:1px solid #d7d7d7}
+	.m_teenager h3{border-bottom-width:0}
+	.m_teenager ul{padding:80px 0 0;background-position-y:-15px}
+	.m_popupZone .bx-wrapper,.m_popupZone li{width:240px !important}
+	.m_popupZone .bx-wrapper{margin:0 auto}
+	.m_popupZone li{border-radius:0}
+	.m_sns{border-radius:0}
+	.m_sns > ul{width:175px;min-height:230px;margin:0 auto}
+
+	.m_internet{border-bottom:0}
+
+	/** 민원서비스 & 참여신고 **/
+	.area02{padding-bottom:45px}
+	.area02 .m_header h2{width:400px;margin-left:0}
+	.area02 .m_header h2:after{right:0;width:300px}
+	.area02 .wrap_cont{border-radius:0}
+	.area02 .m_header+.wrap_cont{margin-bottom:0}
+	.area02 .m_header+.wrap_cont article{min-height:auto}
+	.area02 .wrap_cont article{float:none;width:100%}
+
+	.m_service,.m_propose{padding:35px 4.5%}
+	.m_service{border-right-width:0;border-bottom:2px solid #fff}
+	.m_service li{width:31%}
+	.m_service li,.m_service li:nth-child(odd){margin-right:2%}
+	.m_service li:nth-child(3n){margin-right:0}
+	.m_propose .bx-wrapper{width:625px;margin-top:30px}
+	
+	/** 교통정보 & (각종)정보 & 복지서비스 **/
+	.m_traffic,.m_welfare{min-height:inherit;padding-right:0;padding-left:0}
+	.m_traffic{padding-right:30px;padding-left:27.5%}
+	.m_traffic:before{right:inherit;left:12%}
+	.m_traffic h3{position:absolute;left:30px}
+	.m_traffic ul{padding:0 0 15px}
+	.m_traffic li,.m_traffic li:nth-child(odd){width:32.2%;margin-right:1.5%}
+	.m_traffic li:nth-child(3n){margin-right:0}
+	.m_info{min-height:253px}
+	.m_info ul{padding-top:25px}
+	.m_info li a:after{width:142px;height:142px;background-size:auto;background-position:0 0}
+	.m_info li a:hover:after,.m_info li a:active:after,.m_info li a:focus:after{background-position-y:-240px}
+	.m_welfare{padding-right:30px;padding-left:30px}
+	.m_welfare:before{left:inherit}
+	.m_welfare ul{padding:15px 0}
+	.m_welfare ul li{width:14%}
+	.m_welfare ul li,.m_welfare ul li:nth-child(odd){margin-right:1.5%}
+	.m_welfare .btn_gender{width:38%;height:100%;}
+	.m_welfare .btn_gender a{padding:25px;font-size:20px;background-size:initial;background-position:90% 50%;}
+
+	/** 대표축제 & 대전관광명소 & 도보여행길 **/
+	.area03_01{padding-bottom:45px}
+	.area03_01 .m_header{background:none}
+	.area03_01 .m_header h2{width:280px;margin:0}
+	.area03_01 .m_header li{margin:0 3px 8px}
+	.area03_01 .m_visit{left:50%;margin-left:-58px}
+
+	.m_festival,.m_walk{border-radius:0}
+	.m_festival{width:33.3%;padding-right:3%;padding-left:3%}
+	.m_tour{width:66.7%}
+	.m_walk{position:relative;width:100%;min-height:inherit !important;padding:18px 7.5% 20px 44%}
+	.m_walk:before{content:'';display:block;clear:both}
+	.m_walk h3{position:absolute;top:30px;left:30px}
+	.m_walk ul{padding-top:0}
+	.m_walk ul:before{top:-10px;left:-30%}
+
+	/** 맞춤서비스 **/
+	.area03_02,.area03_02:after,.m_text_service,.m_text_service div{min-height:456px;max-height:initial}
+	.m_text_service li,.m_text_service div:nth-child(2) li,.m_text_service div:nth-child(2) li:nth-child(odd){width:100%}
+}
+
+@media screen and (max-width:800px) {
+	
+	/** 날씨 & 비쥬얼팝업 **/
+	.m_weather{width:50%}
+
+	/** 핫이슈 & 시장 **/
+	#m_issue .area_cont > div > strong:after{background-position-x:50px}
+	.m_mayor ul{width:38%}
+	.m_mayor ul li a{padding:19px 0;line-height:20px}
+	.m_mayor ul li a br{display:block}
+
+	/** 대전관광명소 **/
+	.m_tour .bx-wrapper{width:355px}
+	.m_tour li{margin-right:0.4%}
+}
+
+@media screen and (max-width:768px) {
+	.banner-site .listbanner li {margin: 0 0 0 16px;}
+
+	/** 날씨정보 **/
+	.m_weather{width:55%}
+
+	/** 핫이슈 & 시장 **/
+	#m_issue .area_cont > div > strong:after{display:none}
+	.m_mayor{background-position-x:-15px}
+
+	/** 민원영역 header **/
+	.area02 .m_header{padding:27px 0 17px}
+	.area02 .m_header h2{width:370px}
+
+	/** 관광영역 header **/
+	.area03_01 .m_header h2{width:260px}
+	.area03_01 .m_visit{margin-left:-65px}
+
+	/** 대전관광명소 **/
+	.m_tour .bx-wrapper{width:348px}
+	.m_tour li{margin-right:0.3%}
+
+	/** 모달팝업위치 : 핫이슈 **/
+	.modal_pop{top:127px !important;margin-top:0 !important}
+}
+
+@media screen and (max-width:736px) {
+	/** 날씨 & 비쥬얼팝업 **/
+	.m_slogan{width:42%;}
+	.m_slogan img{width:95%}
+	.m_visitdj{width:42%;}
+	.m_visitdj img{width:95%}
+	.m_weather{width:58%}
+	/** 청사안내링크 & 핫이슈 & 시장 **/	
+	.m_link,.m_issue,.m_mayor{width:100%}
+	.m_link{float:none}
+	.m_link p a{background-size:inherit}
+	.m_link li a:before{background-position-x:-45px}
+	.m_issue,.m_mayor{float:left;width:50%}
+	.m_issue p a,.m_issue p:after{height:137px}
+	.m_mayor{background-position:-25px -25px}
+	.m_mayor p{width:65%}
+	.m_mayor ul{width:35%}
+
+	/** 민원영역 header **/
+	.area02 .m_header h2{width:340px}
+	.area02 .m_header h2:after{width:240px}
+	
+	/** 참여신고 **/
+	.m_propose .bx-wrapper{width:500px}
+
+	/** 대표축제 & 대전관광명소 **/
+	.area03_01 .m_header{min-height:210px}
+	.area03_01 .m_header h2{width:280px;height:100px;margin:0 auto}
+	.area03_01 .m_header .m_visit,.area03_01 .m_header ul{left:50%;height:112px;margin:-15px 0 0}
+	.area03_01 .m_header .m_visit{margin-left:-200px;background-position-y:50%}
+	.area03_01 .m_header ul{right:inherit}
+
+	.m_festival,.m_tour{width:50%}
+	.m_tour .bx-wrapper{width:166px}
+	.m_tour .bx-controls .bx-prev{left:-45px}
+	.m_tour .bx-controls .bx-next{right:-48px}
+}
+
+@media screen and (max-width:641px) {
+	/** 날씨 & 비쥬얼팝업 **/
+	.wrap_cont{position:initial;}
+	.m_slogan{position:absolute;bottom:10px;width:90%;margin:0 auto 15px;display:block;}
+	.m_slogan img{}
+	.m_slogan .for_mo{width:auto;margin:0 auto;}
+	.m_weather{width:55%;float:none;}
+	.m_weather p:first-child{display:none;}
+	
+	.m_visitdj{position:absolute;bottom:10px;width:90%;margin:0 auto 15px;display:block;}
+	.m_visitdj img{}
+	.m_visitdj .for_mo{width:auto;margin:0 auto;}
+	.margin641-none{margin-left:0 !important;}
+	
+	/** 비쥬얼팝업 & 핫이슈 **/
+	.area01_01{position:relative;padding-bottom:105px}
+	.m_visualZone li img{height:auto}
+	#m_issue .area_cont{overflow-y:auto;height:450px}
+	#m_issue .area_cont div{float:none;width:100%}
+	#m_issue .area_cont div > strong,#m_issue .area_cont div > a.click{height:105px}
+	#m_issue .area_cont div > strong:after,#m_issue .area_cont div > a.click:after{display:block;background-position-x:100%}
+	#m_issue .area_cont ul{height:auto}
+
+	/** 민원서비스 & 참여신고 & 교통정보 & (각종)정보 & 복지서비스 **/
+	.area02{padding-bottom:30px}
+	.area02 .m_header h2{margin:0 auto}
+	.area02 .m_header h2:after{display:none}
+
+	.m_service li{width:29%}
+	.m_service li:nth-child(1),.m_service li:nth-child(4){width:35%}
+	.m_service li:nth-child(3),.m_service li:nth-child(6){width:32%}
+	.m_propose .bx-wrapper{width:485px}
+	.m_propose li{margin-right:-5px}
+	.m_traffic:before{left:10%}
+	.m_info ul{padding-bottom:30px}
+	.m_info li{width:50%}
+	.m_info li:nth-child(n+3) a{margin-top:35px;line-height:1.1em}
+	.m_welfare:before{right:-35px}
+	.m_welfare ul li,.m_welfare ul li:nth-child(odd){margin-right:0.8%}
+	.m_welfare ul li:nth-child(3){width:16%}
+	.m_welfare ul li:last-child{width:18%}
+	.m_welfare ul li a{padding:0 1.5%}
+	.m_welfare .btn_gender{width:34%;}
+	.m_welfare .btn_gender a{padding:20px 15px;font-size:18px;background-size:30%;background-position:90% 90%;}
+
+	/** 맞춤서비스 **/
+	.m_text_service.wrap_cont{width:100%}
+}
+
+@media screen and (max-width:600px) {
+	/** 날씨 & 비쥬얼팝업 **/
+	.m_weather{width:65%;}
+
+	/** 시장 **/
+	.m_mayor p{padding-top:0}
+	.m_mayor p a{padding:10px 0 10px 25px}
+
+	/** 공지사항 & STORY대전 **/
+	.area01_02_01{padding-top:20px}
+	.area01_02_01 .m_news{margin-bottom:30px}
+
+	.m_news > ul > li,.m_news > ul > li:last-child{min-width:100%;max-width:100%}
+	.m_news > ul > li div{position:relative}
+	.m_news > ul > li h3 > a{line-height:48px;font-size:1.1em;text-align:left;border-bottom:1px solid #d4d4d4;border-radius:0}
+	.m_news > ul > li h3 a:after{display:none}
+	.m_news > ul > li.on h3 a{color:#1d4491;border-bottom-width:0;background:none}
+	.m_news > ul > li div ul{height:auto;padding:18px 0 18px 2%}
+	.m_news > ul > li div ul li{padding-right:2%}
+	.m_news > ul > li div ul li span{display:none}
+	.m_story li a img{height:189px}
+	.m_story li{float:none;width:285px}
+	.m_story li,.m_story li:first-child{margin:0 auto}
+
+	/** 10대뉴스 & 알림창 & 인터넷방송 & sns **/
+	.area01_02_02{padding:0 0 35px}
+	.area01_02_02 > div:first-child{border:0}
+	.area01_02_02 > div article,.area01_02_02 > div article:first-child{float:none;width:100%;min-height:auto;margin:10px 0}
+	.area01_02_02 > div,.m_popupZone,.m_sns{border:0}
+
+	.m_popupZone .bx-wrapper, .m_popupZone li,.m_internet ul,.m_sns > ul{width:285px !important}
+	.m_teenager{padding-top:5px;padding-bottom:20px;border:0;border-right-width:0;border-left-width:0}	
+	.m_popupZone li img,.m_internet li a span img,.m_sns > ul > li ul li strong img{height:189px}
+	.m_internet ul{margin:0 auto}
+	.m_internet li a span{display:block}
+	.m_sns > ul{min-height:290px}
+
+	/** 민원서비스 & 교통정보 & 복지서비스 **/
+	.m_service li{width:48.5% !important;margin-right:0}
+	.m_service li:nth-child(odd){margin-right:3%}
+	.m_propose .bx-wrapper{width:368px}
+	.m_traffic{padding-right:30px;padding-left:30px}
+	.m_traffic:before{left:inherit;right:0}
+	.m_traffic h3{position:relative;left:0}
+	.m_traffic ul{padding:25px 90px 15px 0}
+	.m_traffic li,.m_traffic li:nth-child(odd){width:48%;margin-right:0}
+	.m_traffic li:nth-child(odd){margin-right:2%}
+	.m_welfare ul{padding-right:170px}
+	.m_welfare ul li,.m_welfare ul li:nth-child(3),.m_welfare ul li:last-child{width:48%}
+	.m_welfare .btn_gender a{background-size:37%;}
+
+	/** 맞춤서비스 **/
+	.area03_02:after{display:none}
+	.area03_02,.area03_02:after,.m_text_service,.m_text_service div{min-height:auto}
+
+	.m_text_service div{width:100%}
+	.m_text_service div h3{border-bottom:1px solid rgba(255,255,255,0.5);z-index:1}
+	.m_text_service div:first-child{background:#1e5c97}
+	.m_text_service ul{padding:13px 8%}
+	.m_text_service li,.m_text_service div:nth-child(2) li,.m_text_service div:nth-child(2) li:nth-child(odd){width:50%;margin:4px 0}	
+}
+
+@media screen and (max-width:540px) {
+	/** 날씨 & 비쥬얼팝업 **/
+	.m_slogan,.m_weather{}
+	/** 청사안내링크 & 핫이슈 & 시장 **/
+	.m_link p a{background-size:inherit}
+	.m_issue,.m_mayor{float:none;width:100%}
+	.m_issue p a,.m_issue p:after{height:108px}
+	.m_link li a:before{background-position-x:-45px}
+	.m_mayor{background-position-x:0}
+	.m_mayor p{width:40%}
+	.m_mayor ul{width:60%}
+	.m_mayor ul li a{line-height:30px}
+	.m_mayor ul li a br{display:none}
+
+	/** 시장 **/
+	.m_mayor ul{width:50%}
+
+	/** 대표축제 & 도보여행길 **/
+	.area03_01 .wrap_cont article{float:none;padding:30px}
+	.area03_01 .wrap_cont article.m_festival{min-height:auto}
+
+	.m_festival .more_main{right:30px}
+	.m_festival,.m_tour{width:100%}
+	.m_festival .bx-controls{top:47%}
+	.m_festival .bx-controls a{position:absolute}
+	.m_festival .bx-controls .bx-prev{left:50%;margin-left:-130px}
+	.m_festival .bx-controls .bx-next{right:50%;margin-right:-130px}
+	.m_tour .bx-wrapper{width:348px}
+	.m_walk h3{position:relative;top:0;left:0}
+	.m_walk ul{padding-left:170px}
+	.m_walk ul:before{left:80px}
+}
+
+@media screen and (max-width:480px) {
+	/** 날씨 & 비쥬얼팝업 **/
+	.m_slogan,.m_weather{}
+
+	/** 핫이슈 & 시장 **/	
+	#m_issue .area_cont div > strong:after,#m_issue .area_cont div > a.click:after{background-position-x:25px}
+	.m_mayor {background-position-x:-15px;}
+	.m_mayor ul{width:45%}
+
+	/** 참여신고 & 교통정보 & 복지서비스 **/
+	.m_propose .bx-wrapper{width:248px}
+	.m_traffic:before{right:20px}
+	.m_traffic ul{padding:65px 0 9px}
+	.m_welfare:before{right:0}
+	.m_welfare ul{padding:15px 0 90px}
+	.m_welfare .btn_gender{width:100%; height:88px;}
+	.m_welfare .btn_gender a{padding:20px 30px;background-size:18%;}
+
+	/** 관광영역 header **/
+	.area03_01 .m_header{min-height:300px;margin-bottom:5px}
+	.area03_01 .m_header .m_visit{top:93px;margin-left:-90px}
+	.area03_01 .m_header ul{top:initial;bottom:0;width:220px;margin:0 0 0 -110px}
+
+	/** 관광명소 **/	
+	.m_tour .bx-wrapper{width:166px}
+	.m_tour .bx-controls .bx-prev{left:-57px}
+	.m_tour .bx-controls .bx-next{right:-57px}
+
+	/** 도보여행길 **/
+	.m_walk ul{padding-top:95px;padding-left:0}
+	.m_walk ul:before{top:-25px;right:0;left:initial}
+
+	/** 맞춤서비스 **/
+	.m_text_service li,.m_text_service div:nth-child(2) li,.m_text_service div:nth-child(2) li:nth-child(odd){width:50%}
+}
+
+@media screen and (max-width:414px) {
+	/** 날씨 & 비쥬얼팝업 **/
+	.m_slogan,.m_weather{width:92%}
+	.m_weather {height:auto;}
+	.m_weather p:first-child{width:100%;padding-bottom:10px;margin-bottom:10px;background:none;border-bottom:1px dotted #fff;}
+	.m_weather .weather,.m_weather .dust{width:100%; text-align:center;}
+
+	/** 시장 **/
+	.m_mayor{background-size:110%;background-position-x: 2px;background-position-y:-17px;}
+	.m_mayor ul{width:36%}
+	.m_mayor ul li a{line-height:21px}
+	.m_mayor ul li a br{display:block}
+
+	/** 10대뉴스~SNS 영역 **/
+	.area01_02_02{padding-bottom:20px}
+
+	/** 민원영역 header **/
+	.area02 .m_header{padding:15px 0}
+
+	/** 민원서비스 & 참여신고 **/
+	.m_service,.m_propose{padding:20px}
+	.m_service p,.m_propose p{margin-bottom:10px}
+	.m_service li{width:100% !important;margin-top:8px;margin-right:0 !important}
+}
+
+@media screen and (max-width:384px) {
+	/** 날씨 & 비쥬얼팝업 **/
+	.m_slogan,.m_weather{width:90%}
+	.m_slogan .for_mo{width:100%;}
+
+	/** 시장 **/
+	.m_mayor{background-position-x:0px;background-position-y:-17px;}
+	.m_mayor p {width:62%}
+	.m_mayor p a{padding: 37px 0px 32px 18px;}
+}
+
+@media screen and (max-width:360px) {
+	/** 날씨 **/
+	.m_weather .weather .icon{margin-right:5px}
+	.m_weather .weather strong{font-size: 1.6em;}
+
+	/** 청사안내링크 & 핫이슈 & 시장 **/
+	.m_link p a{background-size:55%}
+	.m_link li a{padding-left:50px}
+	.m_link li a:before{background-position-x:-55px}
+	.m_issue p a{background-size:54%}
+	.m_mayor{background-position-x:0px}
+
+	/** 참여신고 & 교통정보 & 복지서비스 **/
+	.m_welfare{min-height:235px;}
+	.m_welfare .btn_gender a{padding:20px;}
+
+	/** 공지사항 & 10대뉴스 **/
+	.area01_02_01{padding-top:5px}
+	.m_news > ul > li div ul{padding-top:12px;padding-bottom:5px}
+
+	/** 민원서비스 & 참여신고 **/
+	.area02{padding-bottom:25px}
+	.area02 .m_header{padding:10px 0}
+	.area02 .m_header h2{width:100%;height:65px}
+	.m_service li{margin-top:5px}
+	.m_service li:first-child{margin-top:0}
+	.m_propose .bx-wrapper{width:128px;margin-top:20px}
+
+	/** 교통정보 & (각종)정보 & 복지서비스 **/
+	.m_traffic:before,.m_welfare:before{display:none}
+	.m_traffic,.m_welfare{padding-right:20px;padding-left:20px}
+	.m_traffic ul,.m_welfare ul{padding:15px 0 8px}
+	.m_traffic li:last-child{width:98%}
+	.m_info ul{padding-top:20px;padding-bottom:10px}
+	.m_info li{width:100%;margin-bottom:15px;;border-top:1px dotted #b4b4b4}
+	.m_info li:first-child{padding-top:0;border-top-width:0}
+	.m_info li a:after{margin-top:0}
+	.m_info li:nth-child(2){padding-top:15px}
+	.m_info li:nth-child(2) a:after{margin-top:8px}
+	.m_info li:nth-child(n+3) a{margin-top:8px;line-height:2.4em}
+
+	/** 도보여행길 **/
+	.area03_01{padding-bottom:25px}
+	.m_walk ul:before{display:none}
+	.m_walk ul{padding-top:10px}
+
+	/** 맞춤서비스 **/
+	.m_text_service ul{padding:10px 12%}
+	.m_text_service li,.m_text_service div:nth-child(2) li,.m_text_service div:nth-child(2) li:nth-child(odd){width:100%;margin:5px 0}
+}
+
+@media screen and (max-width:320px) {	
+	.banner-site .listBtn{right:-10px; width:84px;}
+
+	.m_weather{min-width:280px;}
+
+	/** 10대뉴스~SNS영역 **/	
+	.area01_02_02{padding:5px 0}
+	.area01_02_02 > div article{padding-right:0;padding-left:0}
+
+	.m_sns{background:#fff}
+
+	/* 관광명소 */
+	.m_tour .bx-controls .bx-prev{left:-48px}
+	.m_tour .bx-controls .bx-next{right:-48px}
+}
+
+/** scroll style **/
+.mCSB_outside+.mCSB_scrollTools{right:0}
+.mCSB_inside>.mCSB_container{margin-right:20px}
+.mCSB_scrollTools .mCSB_draggerContainer,.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail{background:#a4b6be}
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-light-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{width:100%;border-radius:0;background-color:#81959e !important}
+
+
+/** 메인디자인개편 20200206추가 **/
+.newmain .m_visualZone{left:0;}
+.newmain .m_right_box, .newmain .m_link_n{right:0; width:39.5%; position:absolute;}
+.newmain .m_right_box{top:0;}
+.newmain .m_mayor_n{background:#4f81b3; height:110px;}
+.newmain .m_mayor_n:after{content:''; display:block; position:absolute; bottom:0; right:0; width:105px; height:100%; background:url(/images/drh/main/mayor_back.png)no-repeat;}
+.newmain .m_mayor_n p{padding:31px 0 0 20px; letter-spacing:-.5px}
+.newmain .m_mayor_n p a{color:#fff; font-size:18px}
+.newmain .m_mayor_n p br{display:none;}
+.newmain .m_mayor_n ul{padding:13px 0 0 20px;}
+.newmain .m_mayor_n ul li{float:left;}
+.newmain .m_mayor_n ul li a{color:#fff; font-size:16px;}
+.newmain .m_mayor_n ul li a:hover,.newmain .m_mayor_n ul li a:active,.newmain .m_mayor_n ul li a:focus{color:#fff;text-decoration:underline;}
+.newmain .m_mayor_n ul li:first-child{margin-right:15px;}
+.newmain .m_mayor_n ul li:last-child{padding-left:15px; border-left:1px solid #fff}
+.newmain .m_link_n{bottom:0}
+.newmain .m_link_n ul li{width:calc(25% - 7px); float:left; height:93px; margin-right:7px;}
+.newmain .m_link_n li:nth-child(4){width:25%; margin-right:0;}
+.newmain .m_link_n li a{display:block;position:relative;height:93px;padding-top:60px;color:#fff;font-size:0.9em;font-weight:bold;text-align:center;z-index:1}
+.newmain .m_link_n li a:before,
+.newmain .m_link_n li a:after{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%}
+.newmain .m_link_n li a:before{background:url(/images/drh/main/bg_link03.png) no-repeat 50% 0}
+.newmain .m_link_n li a:after{background:rgba(32,44,66,0.6); z-index:-1}
+.newmain .m_link_n li a:hover,
+.newmain .m_link_n li a:active,
+.newmain .m_link_n li a:focus{color:#fff;text-decoration:underline;background-position:50% 0}
+.newmain .m_link_n li a:hover:after,
+.newmain .m_link_n li a:active:after,
+.newmain .m_link_n li a:focus:after{background:rgba(32,44,66,0.8);}
+.newmain .m_link_n li a:hover:before{-webkit-animation:vibes2 2s ease infinite;animation:vibes2 1s ease infinite}
+.newmain .m_link_n li:nth-child(1) a:before{background-position-y:-192px}
+.newmain .m_link_n li:nth-child(2) a:before{background-position-y:-96px}
+.newmain .m_link_n li:nth-child(3) a:before{background-position-y:0px}
+.newmain .m_link_n li:nth-child(4) a:before{background-position-y:-288px}
+
+.newmain .m_story_n{height:173px; padding-top:0px; margin-top:7px; background:#000; width:100%; left:0}
+.newmain .m_story_n .story_img:before{content:''; display:block; position:absolute; width:100%; height:100%; background:url(/images/drh/main/story_back.png)no-repeat; background-size:100%;}
+.newmain .m_story_n .story_img{overflow:hidden; height:173px}
+.newmain .m_story_n .story_img img{width:100%}
+.m_story_n{position:relative;left:20%;width:60%}
+.m_story_n .bx-controls{position:absolute;bottom:0;width:100%;text-align:right;z-index:55}
+.m_story_n .bx-controls .bx-pager,.m_story_n .bx-controls a,.m_story_n .bx-controls .bx-pager:after,.m_story_n .bx-controls a:after{position:absolute;bottom:0;max-height:45px;line-height:50px}
+.m_story_n .bx-controls .bx-pager,.m_story_n .bx-controls a{display:inline-block;color:#fff;font-size:0.82em;text-align:center}
+.m_story_n .bx-controls .bx-pager:after,.m_story_n .bx-controls a:after{content:'';display:block;top:0;left:0;background:rgba(0,0,0,0.7);z-index:-1}
+.m_story_n .bx-controls .bx-pager,.m_story_n .bx-controls .bx-pager:after{width:100px}
+.m_story_n .bx-controls a,.m_story_n .bx-controls a:after{width:45px;text-indent:-9999px}
+.m_story_n .bx-controls .bx-pager{right:141px}
+.m_story_n .bx-controls a.bx-prev{right:94px;background-position:-306px -46px}
+.m_story_n .bx-controls a.bx-next{right:47px;background-position:-447px -46px}
+.m_story_n .bx-controls a.bx-stop{background-position:-353px -46px}
+.m_story_n .bx-controls a.bx-start{background-position:-400px -46px}
+.m_story_n .bx-controls a.bx-stop,.m_story_n .bx-controls a.bx-start{display:block;right:94px}
+.m_story_n .bx-controls a.bx-stop.active,.m_story_n .bx-controls a.bx-start.active{display:none}
+.m_story_n .bx-controls a:hover:after,.m_story_n .bx-controls a:active:after,.m_story_n .bx-controls a:focus:after{background:#000}
+.m_story_n .bx-controls a{background:url(/images/drh/layout/index_2018/bg_controller.png) no-repeat 0 0}
+.m_story_n .bx-wrapper img{width:100%; height:100%}
+.m_story_n .bx-wrapper .bx-viewport ul li{overflow:hidden; height:173px}
+.m_story_n .bx-wrapper .st-tit{float:left; width:calc(100% - 141px); background:rgba(0,0,0,0.7); color:#fff; z-index:1;  height: 45px; line-height: 45px; padding:0 15px; box-sizing:border-box; position:absolute; bottom:0}
+.m_story_n .bx-wrapper .st-tit span{text-overflow: ellipsis; white-space: nowrap; overflow:hidden; max-width:100%; display:inline-block; font-size:15px; float:left; color:#fff}
+.m_story_n .story_title{position:absolute; bottom:0; width:100%; box-sizing:border-box; z-index:55;}
+.m_story_n .story_title .st-con-list a.st-list{background-position: -260px -46px; right:0;}
+.m_story_n .story_title .st-con-list a{background:url(/images/drh/layout/index_2018/bg_controller.png)no-repeat 0 0; position:absolute; bottom:0; max-height:45px; line-height:50px; width:45px; display:inline-block; text-indent:-9999px; text-align:center;}
+.m_story_n .story_title .st-con-list a:after{content: ''; display: block; top: 0; left: 0; background: rgba(0,0,0,0.7); z-index: -1; width:45px; height:45px; position:absolute;}
+.m_story_n .story_title .st-con-list a:hover:after,.m_story_n .story_title .st-con-list a:active:after,.m_story_n .story_title .st-con-list a:focus:after{background:#000}
+
+.m_sns > ul > li a.sns_youtube{background-position:-108px 0}
+.m_sns > ul > li a.on.sns_youtube{background-position:-108px -36px}
+
+@media screen and (max-width:1199px) {
+ .newmain .m_right_box{width:720px; top:inherit; position:relative; margin:0 auto 12px;}
+ .newmain .m_story_n{margin-top:12px;}
+ .newmain .m_link_n{bottom:inherit; position:relative; width:720px; margin:0 auto;}
+ .newmain .m_link_n ul li{width:calc(25% - 12px); margin-right:12px;}
+ .newmain .m_link_n li:nth-child(4){width:25%; margin-right:0;}
+ .newmain .m_visualZone{left:inherit; margin-bottom:12px;}
+}
+
+@media screen and (max-width:999px) {
+ .newmain .m_story_n{padding:0;}
+ .newmain .m_right_box,.newmain .m_link_n{width:100%;}
+}
+
+@media screen and (max-width:500px) {
+	.newmain .m_right_box{margin:0 auto 6px;}
+	.newmain .m_link_n ul li{height:68px}
+	.newmain .m_link_n li:nth-child(1),.newmain .m_link_n li:nth-child(3){width:calc(50% - 6px); margin:6px 6px 6px 0}
+	.newmain .m_link_n li:nth-child(2),.newmain .m_link_n li:nth-child(4){width:calc(50% - 6px); margin:6px 0 6px 6px}
+	.newmain .m_link_n li a{text-align:left; height:68px; padding:27px 0 0 65px;}
+	.newmain .m_link_n li:nth-child(1) a:before{background-position:-45px -188px}
+	.newmain .m_link_n li:nth-child(2) a:before{background-position:-45px -95px}
+	.newmain .m_link_n li:nth-child(3) a:before{background-position:-45px 5px}
+	.newmain .m_link_n li:nth-child(4) a:before{background-position:-45px -285px}
+	.newmain .m_story_n .story_img img{width:auto; height:100%;}
+	.newmain .m_story_n .story_img{overflow:hidden; height:173px}
+	.newmain .m_story_n .story_img:before{background-size:auto;}
+	.newmain .m_mayor_n{height:127px}
+	.newmain .m_mayor_n p br{display:block;}
+	.newmain .m_mayor_n p{line-height:22px; padding:25px 0 0 20px;}
+	.newmain .m_mayor_n:after{top:17px}
+}

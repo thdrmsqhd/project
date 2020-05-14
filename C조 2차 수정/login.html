@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+
+    <link rel="stylesheet" href="css/side bar1.css">
+
+
+    <script src="js/side bar1.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .left {
+            float: left;
+            width: 68%;
+            height: 950px;
+            background: lightgray;
+        }
+
+        .left img {
+            width: 100%;
+            height: 950px;
+        }
+
+        .right {
+            float: left;
+            width: 32%;
+            height: 950px;
+            background: white;
+        }
+
+        .logobox {
+            width: 400px;
+            height: auto;
+            /* background: white; */
+            margin: auto;
+            margin-top: 175px;
+            /* border: 1px solid black; */
+        }
+
+        .logobox>img {
+            width: 100%;
+            height: auto;
+        }
+
+        .loginbox {
+            width: 400px;
+            height: 250px;
+            /* border: 1px solid black; */
+            margin: auto;
+            margin-top: 10%;
+        }
+
+        .idbox {
+            width: 400px;
+            height: 40px;
+            margin-bottom: 15px;
+        }
+
+        .inputbox {
+            width: 400px;
+            height: 40px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            border-radius: 5px 5px 5px 5px;
+            text-indent: 10px;
+        }
+
+        .loginbutton {
+            width: 400px;
+            height: 40px;
+            text-align: center;
+            background: black;
+            color: white;
+            line-height: 40px;
+        }
+
+        .serchpw {
+            float: left;
+            height: 30px;
+            width: 200px;
+            text-align: center;
+            color: blue;
+            font-size: 0.8em;
+            line-height: 30px;
+        }
+
+
+
+        .joinus {
+            float: left;
+            height: 30px;
+            width: 200px;
+            text-align: center;
+            color: blue;
+            font-size: 0.8em;
+            line-height: 30px;
+        }
+
+        .lockimg img {
+            width: 30px;
+            height: 30px;
+            float: left;
+            margin-left: 20px;
+
+        }
+
+        .cardimg img {
+            width: 30px;
+            height: 30px;
+            float: left;
+            margin-left: 20px;
+        }
+
+        .icons {
+            float: left;
+            width: 400px;
+            height: 50px;
+            /*            border: 1px solid black;*/
+        }
+
+        .icons>ul>li {
+            line-height: 50px;
+            text-decoration: none;
+            display: inline;
+            margin: 5%;
+            text-align: center;
+            float: left;
+        }
+
+        .icons>ul>li>img {
+            width: 50px;
+            float: left;
+            height: 50px;
+        }
+
+        .cardimg>a {
+            text-decoration: none;
+            color: blue;
+        }
+        #footer{
+/*             clear: both;*/
+/*     background: black;*/
+        }
+    </style>
+    <link rel="stylesheet" href="css/footerex.css">
+   
+</head>
+
+<body>
+    <div class="left"><img src="img/consertimg.jpg" alt=""></div>
+    <div class="right">
+        <div class="logobox"><img src="img/대전아트센터 로고 배경없음3.png" alt=""></div>
+        <div class=loginbox>
+            <div class="idbox"><input class="inputbox" type="email" placeholder="이메일 주소"></div>
+            <div class="pwbox"><input class="inputbox" type="password" placeholder="비밀번호"></div>
+            <div class="loginbutton">로그인</div>
+            <div class="serchpw lockimg"><img src="img/lock.jpg">아이디/비밀번호 찾기</div>
+            <div class="joinus cardimg"><img src="img/card.jpg"><a href="joinin.html">회원가입</a></div>
+            <div class="icons">
+                <ul>
+                    <li><img src="img/facebook.png"></li>
+                    <li><img src="img/kakaotok.png"></li>
+                    <li><img src="img/google.png"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+     <script>
+        $(function() {
+            $("#footer").load("footerex.html");
+        })
+    </script>
+</body></html>

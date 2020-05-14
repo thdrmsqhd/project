@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JoinIn</title>
+    <link rel="stylesheet" href="joinin.css">
+    <link rel="stylesheet" href="css/footerex.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+
+    <link rel="stylesheet" href="css/side bar1.css">
+
+
+    <script src="js/side bar1.js"></script>
+    <script>
+        $(function() {
+            $("#footer").load("footerex.html")
+        })
+    </script>
+</head>
+
+<body>
+    <div class="Z_left"><img src="img/consertimg.jpg"></div>
+    <!--     right영역시작-->
+    <div class="Z_right">
+        <!--       logobox영역시작-->
+        <div class="Z_logobox"><img src="img/logo.png"></div>
+        <!--        logobox영역끝-->
+
+        <!--       loginbox영역시작-->
+        <div class="Z_loginbigbox">
+            <div class="Z_loginmid">
+                <div class="Z_id"><input type="Z_text" id="Z_input1" placeholder="이메일" id="Z_email"></div>
+                <div class="Z_pasword"><input type="text" id="Z_input1" placeholder="비밀번호" id="Z_password"></div>
+                <div class="Z_passwordcheck"><input type="text" id="Z_input1" placeholder="비밀번호 확인" id="Z_passwordcheck"></div>
+                <div class="Z_birth"><input type="text" id="Z_input1" placeholder="생년월일" id="Z_birth"></div>
+            </div>
+            <div class="Z_loginmid2"><a href="#" id="Z_link1"><button id="Z_loginbutton">회원가입</button></a></div>
+        </div>
+        <!--        loginbox영역끝-->
+        <!--   다음계정으로가입하기영역시작-->
+        <div class="Z_loginlink"><span>다음계정으로 가입하기</span></div>
+        <!--   다음계정으로가입하기영역끝-->
+        <!--  sns가입 영역시작-->
+        <div class="Z_loginsns"><a href="#" class="Z_link2"><img src="img/facebook.png"></a></div>
+        <div class="Z_loginsns"><a href="#" class="Z_link2"><img src="img/kakaotok.png"></a></div>
+        <div class="Z_loginsns"><a href="#" class="Z_link2"><img src="img/google.png"></a></div>
+
+        <!--   sns가입 영역 끝-->
+    </div>
+    <!--    right영역끝-->
+    <div id="footer"></div>
+</body></html>

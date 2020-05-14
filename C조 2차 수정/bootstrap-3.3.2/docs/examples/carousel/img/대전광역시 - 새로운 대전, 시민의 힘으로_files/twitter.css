@@ -1,0 +1,145 @@
+﻿@charset "utf-8";
+.twitter * 
+{
+	margin: 0;
+	padding: 0;
+}
+
+.twitter {
+	margin: 0;
+	font-size: 11px !important;
+	line-height: 1.45em;
+	color: #8E8E8E !important;
+	background: #fafafa !important; 
+	font-family: Dotum,Gulim,AppleGothic,Sans-serif; 
+	height:100%;
+}
+
+
+
+.twitter_update_list li ul {
+	list-style-type: none;
+}
+
+.twitter_update_list li {
+	height: 49px !important; width:210px;
+	
+}
+
+
+
+img, a img {
+	border: 0;
+}
+
+div#container {
+	position: relative;
+	margin: 1em 0;
+	padding: 1em;
+}
+
+a.download {
+	font-weight: bold;
+}
+
+div#footer {
+	padding-top: 1em;
+	color: #666;
+	border-top: 2px solid #ddd;
+}
+
+.twitted {
+	border: 0px solid #888;
+	
+	width:218px;
+}
+
+.twitted h2 {
+	margin: 0;
+	padding: 0.3em 0.8em;
+	font-size: 1em;
+	color: #fff;
+	background-color: #888;
+}
+
+.twitted p.preLoader {
+	margin: 0;
+	padding: 1em 1em 1em 3em;
+	background: transparent url("/api/sns/twitter/loader.gif") 1em center no-repeat;
+	/* generate your own loader gif: http://www.ajaxload.info */
+}
+
+.twitted ul.twitter_update_list {
+	margin: 0;
+	list-style-type: none;
+}
+
+.twitted ul.twitter_update_list li {
+    margin: 0 !important;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #f1f0f4;
+	float:left;
+	background:#fff;
+}
+
+
+*:first-child+html .twitted ul.twitter_update_list li  {clear:both;}
+
+.twitted ul.twitter_update_list li span {
+	/* tweet content */
+	display: block;
+}
+
+.twitted ul.twitter_update_list li span a {
+	/* links in tweet content */
+	color: #00619e;
+	text-decoration: none;
+	
+}
+
+.twitted ul.twitter_update_list li a {
+	/* timestamp link */
+	color: #AAAAAA;
+	text-decoration: none;
+}
+
+.twitted ul.twitter_update_list li.firstTweet {
+}
+
+.twitted ul.twitter_update_list li.lastTweet {
+	border-bottom: none;
+}
+
+.twitted p.profileLink {
+	display: block;
+	margin: 0;
+	padding: 0.3em 1em;
+	color: #fff;
+	background-color: #ddd;
+}
+
+.twt_slash {float:left; margin-bottom:3px; margin-left:2px; margin-right:2px;}
+.twt_reply  {float:left; margin-bottom:3px;}
+.twt_time  {float:left; margin-bottom:3px;}		
+
+.tw_top strong { color: #6a6a6a !important; margin-right: 7px;}	
+.tw_top  { color: #00619e !important; margin-right: 7px;}
+.twitted ul {width: 218px;}
+	
+.jta-tweet-list-controls{
+ /*background: url("http://www.daejeon.go.kr/images/2013_daejeon/main/right_area_bg.gif") repeat-y scroll 0 0 transparent;*/
+ height: 25px;
+ padding-top: 9px;
+ position: absolute;
+ top:215px;
+ width: 210px;
+}	      
+
+.twt_content {color:#6a6a6a !important;}
+.tw_timeline {padding-top:2px; color:#727272; clear:both;}
+.twitter_paing {width: 165px; float: left; color:#6a6a6a;}
+.twitter_paing a.m_more {color:#666;}
+.twitter_paing strong {color:#252525; }
+.twitted ul {position: relative;}
+
+.twitter_btn {padding-top:3px;}

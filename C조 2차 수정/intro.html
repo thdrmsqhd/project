@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/side bar1.css">
+    <style>
+       
+
+        /*검색어 입력창 버튼        */
+
+
+        #slide {
+            margin: 0 auto;
+            position: relative;
+            width: 1244px;
+            height: 471px;
+            background: #fff;
+            border: 1px solid #fdf6dd;
+            margin-left: 18%;
+      
+            
+        }
+        #slide>#viewer>img{
+            width: 1244px;
+            height: 471px;
+        }
+        #viewer {
+            position: relative;
+            height: 350px;
+            
+            
+        }
+
+
+        #btnGroup {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            right: 0;
+            bottom: 2%;
+            
+           
+        }
+
+        #btnGroup li {
+            float: left;
+            margin-right: 3px;
+            width: 15px;
+            height: 15px;
+            list-style: none;
+            cursor: pointer;
+            background: gray;
+        }
+
+        #btnGroup li a {
+            color: #fff;
+            font-size: 0.5em;
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: 15px;
+            text-align: center;
+            text-decoration: none;
+
+
+        }
+
+        #btnGroup li a:hover {
+            background: #cf0;
+            color: #000;
+        }
+
+        #btnGroup li a.on {
+            background: #05184d;
+            color: #fff;
+        }
+        
+        #word{
+            color: gray;
+            text-align: center;
+        }
+        
+        #intruimg{
+            margin-left: 400px;
+        }
+    </style>
+        <script>
+        //<!--    제이쿼리 함수 클릭시 메뉴 숨김 보이기 -->
+        $(function() {
+            $(".e-nav").hide();
+            $(".e-etc>a").click(function() {
+
+                $(".e-nav").each(function() {
+                    console.log($(this).css("display"));
+                    if ($(this).css("display") == "block") {
+                        $(this).stop().hide(250);
+                    }
+
+                }); // sub each end
+                $(this).next().stop().show(550);
+
+            });
+        }); // jQuery end
+
+    </script>
+    <link rel="stylesheet" href="css/footerex.css">
+    <script>
+        $(function() {
+            $("#footer").load("footerex.html")
+        })
+    </script>
+</head>
+
+<body>
+    <div class="leftbox">
+        <div id="nav">
+        <div id="e-logo">
+            <h1 class="e-logo1">
+                <a href="#" alt="엘지아트센터 로고" title="LG ARTS CENTER">
+                    <img src="img/대전아트센터 로고 배경없음3.png" alt="">
+                </a>
+            </h1>
+        </div>
+<!--이미지로고 및 이미지링크 -->
+        <div id="searchbar">
+            <input id="search" type="text" placeholder="검색어 입력"><button id="search2" class="glyphicon glyphicon-search" aria-hidden="true"></button>
+        </div>
+<!--검색어입력창        -->
+        <div id="e-wrap">
+
+            <ul class="sidebar">
+
+                <li class="e-etc" title="로그인">
+                    <a href="login.html">로그인</a>
+                </li>
+
+                <li class="e-etc" title="회원가입">
+                    <a href="joinin.html">회원가입</a>
+                </li>
+
+                <li class="e-etc" title="LG아트센터 소개">
+                    <a href="intro.html" class="etc1" title="대전아트센터 소개">대전아트센터 소개</a>
+                </li>
+
+                <li class="e-etc">
+                    <a href="account.html" class="etc2" title="공연/예매">공연/예매</a>
+                    <ul class="e-nav">
+                        <li class="e-11">
+                            <a href="performance.html" title="공연 소개">공연 소개</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="account.html" title="예매 하기">예매 하기</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="account-confirm.html" title="예매 확인 / 취소">예매 확인 / 취소 </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="e-etc">
+                    <a href="#" class="etc2" title="이용 안내">이용 안내</a>
+                    <ul class="e-nav">
+                        <li class="e-11">
+                            <a href="notice.html" title="공지사항">공지사항</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="#" title="객석 안내">객석 안내</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="root.html" title="오시는 길">오시는 길</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="aroundkichen.html" title="주변 식당 안내">주변 식당 안내</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="e-etc">
+                    <a href="#" class="etc2" title="커뮤니티">커뮤니티</a>
+                    <ul class="e-nav">
+                        <li class="e-11">
+                            <a href="#" title="이벤트">이벤트</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="#" title="관람후기">관람후기</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+    </div>
+   <div class="rightbox">
+    <div id="slide">
+        <div id="viewer">
+            <img id="img1" src="intrud1.png">
+            
+        </div>
+        <ul id="btnGroup">
+            <li id="btn0"><a href="img/intrud1.png">1</a></li>
+            <li id="btn1"><a href="img/intrud2.png">2</a></li>
+            <li id="btn2"><a href="img/intrud3.png">3</a></li>
+<!--            <li id="btn3"><a href="intrud4.png">4</a></li>-->
+        </ul>
+    </div>
+    <script>
+        var count = 0;
+        var path;
+        $("#btn" + count).find("a").addClass("on");
+        var timer = setInterval("move()", 3000);
+
+        function move() {
+            console.log("aaaa");
+            $("#btnGroup>li>a").removeClass("on")
+            count = (count + 1) % 3;
+           
+            var n = count + 1;
+            path = "intrud" + n + ".png";
+            effect(path);
+            
+        }
+        
+        function effect(path){
+             $("#btnGroup>li>a").removeClass("on");
+             $("#viewer img").attr("src", path);
+             $("#viewer img").css({opacity:0}).stop().animate({opacity:1}, 500);
+            
+            $("#btn" + count).find("a").addClass("on");
+        }
+        $("#btnGroup>li>a").click(function(e){
+            e.preventDefault();
+            var cnt = $(this).text();
+            console.log(cnt);
+            count = cnt - 1;
+            path =  "intrud" + cnt + ".png";
+            effect(path);
+        });
+        
+        
+        $("#viewer>img").hover(function(){
+                clearInterval(timer);                         
+         },function(){
+                timer = setInterval("move()",3000);
+        });
+    </script>
+    
+    <br>
+    
+    <h2 id = word>
+    예술의 향기가 가득한 <b>LG ARTS CENTER</b> 홈페이지에 오신 것을 환영합니다.
+    </h2>
+    <br><br><br>
+    
+    <div id = intruimg>
+    <img src="img/intru1.png">
+    <br><br><br>
+    <img src="img/intru2.png">
+    <br><br><br><br>
+    <img src="img/intru3.png">
+    <br><br><br>
+    </div>
+   </div>
+   <div id="footer"></div>
+</body></html>
+
+
+

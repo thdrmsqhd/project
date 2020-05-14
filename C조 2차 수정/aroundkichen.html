@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/side%20bar1.css">
+    <style>
+        
+        /*        바디 css */
+       *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        
+        
+        .rightbox{
+            width: 85%;
+            height: 1000px;
+            float: left;
+/*            border: 1px solid black;*/
+        }
+        /*        바디 css */
+        .e-nav {
+            display: block;
+        }
+
+        .e-logo1>a>img{
+            margin-top: 110px;
+            width: 100%;
+            height: 125px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #777;
+            display: block;
+
+
+        }
+
+        a:hover {
+            color: red;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+
+        }
+
+        li {
+            list-style: none;
+            display: block;
+        }
+
+        #e-wrap {
+            margin-left: 0px;
+            margin-top: 0px;
+            width: 100%;
+        }
+
+        #e-wrap .e-etc {
+            /*    height: 40px;*/
+            line-height: 40px;
+            background: white;
+            text-indent: 10px;
+            border-top: 1px solid #f2f2f2;
+            border-bottom: 1px solid #f2f2f2;
+            font-size: 1.1em;
+            display: block;
+        }
+
+        .e-11 {
+            display: block;
+            line-height: 30px;
+            text-indent: 25px;
+            cursor: pointer;
+            background: #f2f2f2;
+
+        }
+
+        /* 검색어 입력창  버튼    */
+        #search {
+            border-radius: 5px 5px 5px 5px;
+            width: 80%;
+        }
+
+        #search2 {
+            width: 20%;
+            height: 10px;
+            background: white;
+            border: 1px;
+        }
+
+        /*검색어 입력창 버튼        */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            float:left;
+
+        }
+
+        td {
+            border-bottom: 0.1px solid gray;
+
+        }
+
+        .gray {
+            background: gainsboro;
+            color: dimgray;
+        }
+
+        .graytop {
+            background: gainsboro;
+            border-top: 2px solid red;
+            color: dimgray;
+
+        }
+
+        .graytop>a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+             margin-left: 20px;
+        }
+
+        .gray>a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-left: 20px;
+
+
+        }
+
+        #line {
+            border-top: 2px solid red;
+            color: gainsboro
+        }
+
+        #line>img {
+            height: 99px;
+            width: 115px;
+            
+
+        }
+
+
+
+        #s {
+            height: 99px;
+            width: 200px;
+            
+        }
+
+        #s1 {
+            height: 35px;
+            width: 134px;
+          
+        }
+
+        #s2 {
+            height: 94px;
+            width: 142px;
+            
+        }
+
+        #s3 {
+            height: 79px;
+            width: 92px;
+            
+        }
+
+        #s4 {
+            height: 109px;
+            width: 98px;
+            
+        }
+
+        #s5 {
+            height: 134px;
+            width: 100px;
+            
+        }
+        
+        .pic{
+            text-align: center;
+        }
+        
+        #event{
+            float: left;
+            
+            
+        }
+        
+     
+        #tabl{
+            clear: both;
+        }
+
+
+    </style>
+  
+    <script src="js/side bar1.js"></script>
+    <link rel="stylesheet" href="css/footerex.css">
+    <script>
+        $(function() {
+            $("#footer").load("footerex.html")
+        })
+    </script>    
+</head>
+
+<body>
+   <div class="leftbox">
+        <div id="nav">
+        <div id="e-logo">
+            <h1 class="e-logo1">
+                <a href="#" alt="엘지아트센터 로고" title="LG ARTS CENTER">
+                    <img src="img/대전아트센터 로고 배경없음3.png" alt="">
+                </a>
+            </h1>
+        </div>
+<!--이미지로고 및 이미지링크 -->
+        <div id="searchbar">
+            <input id="search" type="text" placeholder="검색어 입력"><button id="search2" class="glyphicon glyphicon-search" aria-hidden="true"></button>
+        </div>
+<!--검색어입력창        -->
+        <div id="e-wrap">
+
+            <ul class="sidebar">
+
+                <li class="e-etc" title="로그인">
+                    <a href="login.html">로그인</a>
+                </li>
+
+                <li class="e-etc" title="회원가입">
+                    <a href="joinin.html">회원가입</a>
+                </li>
+
+                <li class="e-etc" title="LG아트센터 소개">
+                    <a href="intro.html" class="etc1" title="대전아트센터 소개">대전아트센터 소개</a>
+                </li>
+
+                <li class="e-etc">
+                    <a href="account.html" class="etc2" title="공연/예매">공연/예매</a>
+                    <ul class="e-nav">
+                        <li class="e-11">
+                            <a href="performance.html" title="공연 소개">공연 소개</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="account-check.html" title="예매 하기">예매 하기</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="account-confirm.html" title="예매 확인 / 취소">예매 확인 / 취소 </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="e-etc">
+                    <a href="#" class="etc2" title="이용 안내">이용 안내</a>
+                    <ul class="e-nav">
+                        <li class="e-11">
+                            <a href="notice.html" title="공지사항">공지사항</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="#" title="객석 안내">객석 안내</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="root.html" title="오시는 길">오시는 길</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="aroundkichen.html" title="주변 식당 안내">주변 식당 안내</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="e-etc">
+                    <a href="#" class="etc2" title="커뮤니티">커뮤니티</a>
+                    <ul class="e-nav">
+                        <li class="e-11">
+                            <a href="event_page.html" title="이벤트">이벤트</a>
+                        </li>
+                        <li class="e-11">
+                            <a href="review_page.html" title="관람후기">관람후기</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+    </div>
+<!--    사이드 바 메뉴들 -->
+<div class="rightbox">
+<img id = "event" src = "img/event.png">
+<!--
+    <h2>LG 아트센터 당일 입장권 또는 예매확인서를 소지하시고<br>
+        해당 레스토랑을 방문하시면, 다음과 같은 혜택을 드립니다.</h2>
+    <p>(타 쿠폰 및 할인 카드와 중복 사용 불가)</p>
+    <br>
+    <h5>>제휴문의 : 기획팀 02-2005-1425<br>
+        *본 제휴 혜택은 각 업장의 방침에 따라 사전 고지 없이 변경되거나 중단될 수 있습니다.</h5>
+-->
+    <table id="tabl">
+        <tr>
+            <td class="pic" id="line"><img src="img/ganga.png"></td>
+            <td class="graytop"><a href="#">강가</a><br>&nbsp;위치 : GS타워 지하 1층<br>&nbsp;연락처 : 02 - 2005 - 0610<br>&nbsp;운영시간 : 11:30~21:30</td>
+            <td class="graytop">품목 : 인도식커리<br> 혜택 : 코스메뉴 15% 할인(티켓 1매당 1코스)</td>
+
+        </tr>
+        <tr>
+            <td class="pic"><img id="s" src="img/bona.png"></td>
+            <td class="gray"><a href="#">보나베띠 역삼점</a><br>&nbsp;위치 : GS타워 지하 1층<br>&nbsp;연락처 : 02 - 2005 - 1003<br>&nbsp;운영시간 : 11:30~21:00</td>
+            <td class="gray">품목 : 이탈리안 레스토랑 & 와인 바<br> 혜택 : 일주일 이내 티켓 제시 시 평일 10% 토요일 20% 할인</td>
+
+        </tr>
+        <tr>
+            <td class="pic"><img id="s1" src="img/antica.png"></td>
+            <td class="gray"><a href="#">지아니스 나폴리</a><br> &nbsp;위치 : GS타워 정문 맞은편 3층<br>&nbsp;연락처 : 업체요청으로표시하지않습니다.<br>&nbsp;운영시간 : 11:30~22:30</td>
+            <td class="gray">품목 : 이탈리안 비스트로 & 화덕 피자<br> 혜택 : 당일 공연 티켓 제시 시 지아니스 시저 샐러드 제공</td>
+
+        </tr>
+        <tr>
+            <td class="pic"><img id="s2" src="img/mercureHotel.jpg"></td>
+            <td class="gray"><a href="#">머큐어 앰배서더 강남 쏘도베</a><br>&nbsp;위치 : 역삼역 4번 출구 도보 1분거리<br>&nbsp;연락처 : 02 - 2050 - 6034<br>&nbsp;운영시간 : 11:30~22:30</td>
+            <td class="gray">품목 : 호텔 뷔폐 레스토랑<br> 혜택 : 당일 입장권 또는 예매확인서 소지 시 런치 10% 할인</td>
+
+        </tr>
+        <tr>
+            <td class="pic"><img id="s3" src="img/xingkai.png"></td>
+            <td class="gray"><a href="#">싱카이</a><br>&nbsp;위치 : GS타워 지하 1층<br>&nbsp;연락처 : 02 - 2005 - 1005<br>&nbsp;운영시간 : 11:30~22:30</td>
+            <td class="gray">품목 : 중식당<br> 혜택 : 식사 금액 10% 할인</td>
+
+        </tr>
+        <tr>
+            <td class="pic"><img id="s4" src="img/wine_cha_cha.jpg"></td>
+            <td class="gray"><a href="#">와인주막차차 역삼점</a><br>&nbsp;위치 : 서울 강남구 역삼동 670-17 <br>&nbsp;연락처 : 02 - 554 - 0722<br>&nbsp;운영시간 : 11:00~01:00 (일요일 휴무)</td>
+            <td class="gray">품목 : 와인&한식(Korean Style Wine Bistro)<br> 혜택 : 당일 공연 티켓 및 예매 확인서 제시 시 5%할인(역삼점만)</td>
+
+        </tr>
+        <tr>
+            <td class="pic"><img id="s5" src="img/BunChaRaBoom.jpg"></td>
+            <td class="gray"><a href="#">분짜라붐 역삼점</a><br>&nbsp;위치 : 역삼역 4번출구 1분거리(역삼동644-10) <br>&nbsp;연락처 : 02 - - 567 - 5379<br>&nbsp;운영시간 : 11:00~22:00</td>
+            <td class="gray">품목 : 베트남 하노이식 분짜 & 쌀국수<br> 혜택 : 당일 공연티켓 제시 시 전메뉴 10% 할인</td>
+
+        </tr>
+    </table>
+</div>
+ <div id="footer"></div>
+</body>
+
+</html>

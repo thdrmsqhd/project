@@ -1,0 +1,186 @@
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+    #A_container {
+        width: 85%;
+    }
+
+    /*        navi영역 시작*/
+/*
+    #A_navi > a > img {
+        width: 100%;
+        height: 286px;
+
+    }
+*/
+
+/*        navi영역 시작*/
+#A_navi {
+    width: 100%;
+    height: 88px;
+/*    background: pink;*/
+}
+#A_navi>#A_navil{
+    width: 250px;
+    height: 88px;
+    line-height: 88px;
+/*    background: #ccc;*/
+    text-indent: 25px;
+}
+#A_navi>#A_navil>a>#A_span1{
+    font-size: 35px;
+    color: #ba0047;
+}
+#A_navi>#A_navil>a>#A_span2{
+    font-size: 35px;
+    color: #181818;
+}
+#A_navi>#A_navil>a{
+    text-decoration: none;
+}
+
+/*        navi영역 끝*/
+
+    /*        navi영역 끝*/
+    /*        menu영역 시작*/
+    #A_menu {
+        clear: both;
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    #A_menu > #A_menu1 {
+        width: 50%;
+        height: 60px;
+        float: left;
+        line-height: 30px;
+        padding-left: 25%;
+        text-align: center;
+        font-size: 1.1em;
+        box-sizing: border-box;
+    }
+
+    #A_menu > #A_menu2 {
+        width: 50%;
+        height: 60px;
+        line-height: 30px;
+        float: left;
+        padding-right: 25%;
+        text-align: center;
+        font-size: 1.1em;
+        box-sizing: border-box;
+    }
+#A_menu > #A_menu1 > a{
+    text-decoration: none;
+    color: #686666;
+}
+#A_menu > #A_menu2 > a{
+     text-decoration: none;
+     color: #686666;
+}
+
+    #A_menu > #A_menu1 > a > p:hover {
+        font-weight: bold;
+        color: red;
+    }
+
+    #A_menu > #A_menu2 > a > p:hover {
+        font-weight: bold;
+        color: red;
+    }
+
+    /*        menu영역 끝*/
+/*main영역 시작(table)*/
+#A_maintable{
+    width: 70%;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 90px;
+/*    background: pink;*/
+}
+#A_maintable2{
+    width: 70%;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 90px;
+/*    background: pink;*/
+}
+#A_maintable>#A_2020{
+    font-size: 35px;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    color: #cea975;
+}
+#A_maintable2>#A_2020{
+    font-size: 35px;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    color: #cea975;
+}
+
+td{
+/*    border: 1px solid #ccc;*/
+    height: 70px;
+    box-sizing: border-box;
+}
+
+table{
+    width: 100%;
+    border-collapse:collapse;
+    cursor: pointer;
+
+}
+.A_ta{
+    width: 15%;
+    color: #cea975;
+    font-size: 40px;
+    vertical-align: top;
+}
+.A_tb{
+    width: 10%;
+        border-bottom: 1px solid #ccc;
+}
+.A_tc{
+    width: 75%;
+    text-indent: 20px;
+    font-size: 17px;
+    border-bottom: 1px solid #ccc;
+}
+.A_tc:hover{
+    text-decoration: underline;
+    color: red;
+}
+.A_td{
+    width: 10%;
+    font-size: 16px;
+    color: #889;
+    border-bottom: 1px solid #ccc;
+}
+.A_T1{
+    width: 100%;
+}
+
+table span{
+    display: inline-block;
+    border: 1px solid #feaa68;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 5px;
+    color: #feaa68;
+}
+
+</style>

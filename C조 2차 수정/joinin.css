@@ -1,0 +1,108 @@
+<style>
+ *{
+            margin: 0;
+            padding: 0;
+        }
+body{
+    margin: 0;
+    padding: 0;
+}
+        .Z_left{
+            float: left;
+            width: 68%;
+            height: 950px;
+            background: lightgray;
+        }
+        .Z_left img{
+            width: 100%;
+            height: 950px;
+        }
+        .Z_right{
+            float: left;
+            width: 32%;
+            height: 950px;
+            background: white;
+        }
+/*logobox 영역시작*/
+        .Z_logobox{
+            width: 400px;
+            height: auto;
+            
+            margin: auto;
+            margin-top: 175px;  
+        }
+        .Z_logobox>img{
+            width: 100%;
+            height: auto;
+        }
+
+/*logobox영역끝*/
+/*loginbox영역시작*/
+.Z_loginbigbox{
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#Z_input1{
+    width: 400px;
+    height: 40px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-bottom: 15px;
+    text-indent: 10px;
+    border-radius: 5px;
+/*
+    border-style: none;
+    border: 1px solid ; 
+*/
+}
+
+#Z_loginbutton{
+    width: 400px;
+    height: 40px;
+    border-style: none;
+    background: black;
+    color: white;
+/*    border-radius: 5px;*/
+    cursor: pointer;
+}
+/*
+#Z_loginbutton:hover{
+    background: white;
+    color: navy;
+}
+*/
+/*login영역끝*/
+/*다음계정으로가입하기영역*/
+.Z_loginlink{
+    width: 400px;
+    margin: auto;
+    margin-top: -35px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 0.8em;
+    color: blue;
+}
+/*다음영역으로가입하기영역끝*/
+/*snsicon영역시작*/
+.Z_loginsns{
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.Z_link2 img{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 5%;
+}
+
+
+
+
+</style>

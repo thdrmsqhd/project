@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation</title>
+    <!--        header font-->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">  
+<!--    header font  -->
+<!--   footer font  -->
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+<!--    footerfont  -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        table,
+        tr,
+        td,
+        h1,
+        h2,
+        h3,
+        div,
+        img,
+        a,
+        p,
+        span {
+            margin: 0;
+            padding: 0;
+        }
+        #main{
+            margin: 0;
+            width: 100%;
+            height: 1200px;
+            background: #f0eceb;
+        }
+        #res {
+            margin: 0 auto;
+            width: 500px;
+            height: 80px;
+            word-spacing: 59.8px;
+
+            padding-top: 80px;
+        }
+
+        #res>span {
+            font-family: 'Noto Sans KR', sans-serif;
+            letter-spacing: 1px;
+            font-size: 17px;
+            color: #77878f;
+            cursor: pointer;
+        }
+        #res>span:hover{
+/*            font-weight: bold;*/
+            color: #444;
+        }
+   
+
+        #line {
+            width: 90px;
+            height: 4.4px;
+            margin: 0 auto;
+            background: #88a3ad;
+            margin-top: 5px;
+            margin-left: -12px;
+        }
+        #baseline{
+            width: 800px;
+            height: 2px;
+            margin: 0 auto;
+            background: #88a3ad;
+            margin-top: -2.2px;
+            margin-left: -150px;
+        }
+
+        #date {
+            text-align: center;
+            width: 300px;
+            margin: 0 auto;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 0.1px;
+        }
+
+        #date>p:first-child {
+            font-size: 2.5em;
+        }
+
+        #date>p:last-child {
+            margin-top: 4px;
+            font-size: 20px;
+        }
+
+        #cal table {
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 200px;
+            width: 700px;
+            height: 630px;
+            border-collapse: inherit;
+            border: 1px solid #ccc;
+            text-align: left;
+            border: none;
+            cursor: pointer;
+         
+        }
+
+
+        #cal table td {
+            width: 100px;
+            border-bottom: 1px solid #ccc;
+            background: #cccaca;
+            border: none;
+            color: #777;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 19px;
+            vertical-align: top;
+            padding: 7px;
+            box-sizing: border-box;
+        }
+
+        #day {
+            text-align: center;
+            background: #88A3AD;
+        }
+        
+/*        main2*****/
+        #room1{
+            width: 100%;
+            height: 500px;
+            margin: 80px;
+            margin-top: 150px;
+        }
+        #optbox{
+            width: 510px;
+            height: 50px;
+            margin-top: 3px;
+            margin-left: -7px;
+            line-height: 50px;
+            border-radius: 50px;
+            padding-left: 20px;
+            box-sizing: border-box;
+            background: #77878f;
+            word-spacing: 40px;
+            color: #f0eceb;
+        }
+        #optbox>span{
+            font-family: 'Noto Sans KR', sans-serif;
+            word-spacing: 20px;
+        }
+        #room1 img{
+            margin-top: 10px;
+            margin-left: -5px;
+            width: 500px;
+            height: 300px;
+            
+        }
+        
+        /*헤더 css*/
+        
+            a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
+
+        #ye {
+            color: yellow;
+
+        }
+
+        #header {
+            width: 100%;
+            height: 100px;
+            display: block;
+            font-weight: bold;
+        }
+
+        #logo {
+            width: 55%;
+            height: auto;
+            float: left;
+            text-align: right;
+            font-size: 5em;
+            line-height: 100px;
+            font-family: 'Bebas Neue', cursive;
+            color: black;
+        }
+        
+        #Reservation {
+            width: 10%;
+            height: auto;
+            float: right;
+            text-align: center;
+            line-height: 100px;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.5em;
+            background: #ab8f74;
+
+        }
+
+        #Reservation:hover {
+            background: gray;
+        }
+
+        #Language {
+            width: 10%;
+            height: auto;
+            float: right;
+            font-size: 1.5em;
+            text-align: center;
+            line-height: 100px;
+            font-family: 'Bebas Neue', cursive;
+        }
+
+     
+        #div2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 25px;
+            background: #585858;
+            margin-bottom: 0px;
+            height: 50px;
+            color: white;
+            text-align: right;
+            line-height: 50px;
+            width: 100%;
+            display: block;
+            word-spacing: 5px;
+            box-sizing: border-box;
+            padding-right: 50px;
+        }
+        
+
+/*        footer    */
+        #footer {
+            float: left;
+            background: black;
+            color: darkgray;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: -5px;
+            font-family: 'Noto Sans KR', sans-serif;
+            padding: 30px;
+        }
+
+        #whiteBox {
+            width: 80%;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        #footerText {
+            border: 1px solid black;
+            font-weight: bold;
+        }
+
+        #footerInfomation {
+            border: 1px solid black;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        #footerInfomatoin2 {
+            border: 1px solid black;
+            width: 70%;
+            float: left;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+         #icons a img{
+            float: left;
+            margin-top: 0px;
+            width: 3%;
+            height: 3%;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        #footerText ul li {
+            list-style-type: none;
+            display: inline;
+            text-align: left;
+            margin: 10px;
+            line-height: 50px;
+            font-weight: bold;
+        }
+      
+        #footerbox {
+            width: 100%;
+            height: 300px;
+
+            float: left;
+        }
+/*        footer    */
+    </style>
+</head>
+
+<body>
+   
+    <!--   http://asd.prmaking.co.kr/reservation/%ec%8b%a4%ec%8b%9c%ea%b0%84%ec%98%88%ec%95%bd%ed%95%98%ea%b8%b0/-->
+<!--header html -->
+    <div class="toghter" id="header">
+
+            <div><a id="logo" href="main.html">Requies</a></div>
+            <div id="Reservation"><a href="reservation.html">Reservation</a></div>
+            <div id="Language">Language</div>
+
+    </div>
+            <div id="div2">
+            <span class="h">
+        
+                <a href="#">Prologue</a>&nbsp;&nbsp;&nbsp;
+                <a href="Pension.html">Rooms</a>&nbsp;&nbsp;&nbsp;
+                <a  href="site03.html">Gallery</a>&nbsp;&nbsp;&nbsp;
+                <a href="#">Service</a>&nbsp;&nbsp;&nbsp;
+                <a href="#">Community</a>&nbsp;&nbsp;&nbsp;
+                <a id="ye" href="#">Reservation</a>&nbsp;&nbsp;&nbsp;
+                <a href="https://www.google.co.kr/maps/place/%EC%94%A9%ED%8E%9C%EC%85%98+(SSIG)/@37.864103,128.8427177,17.25z/data=!4m8!3m7!1s0x3561e319d812f4e3:0x1b2910532870df6d!5m2!4m1!1i2!8m2!3d37.864195!4d128.844021?hl=ko" target="_blank">Map</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+
+<!--header html -->    
+    
+    <div id="main">
+        <div id="res">
+            <span>예약현황&nbsp</span>
+            <span>예약하기&nbsp </span>
+            <span> 예약확인/취소</span>
+            <div id="line"></div>
+            <div id="baseline"></div>
+        </div>
+        <div id="date">
+            <p>2020.04</p>
+            <p>TODAY : 2020 04 23(THU)</p>
+        </div>
+        <div id="cal">
+            <table>
+                <tr id="day">
+                    <th>SUN</th>
+                    <th>MON</th>
+                    <th>TUE</th>
+                    <th>WED</th>
+                    <th>THU</th>
+                    <th>FIR</th>
+                    <th>SAT</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+            </table>
+         
+        </div>
+<!--
+        <div id="main2">
+        <div id="room1">
+        <h2>STANDARD</h2>
+        <img src="../img/room_standard.PNG" alt="올바른 경로가 아닙니다">
+        <div id="optbox">
+        <span>wi-fi</span>
+        <span>편의시설</span>
+        <span>서비스</span>
+        <span>주차</span>
+        <span>체크인</span>
+        </div>
+        <div id="box">
+            <input type
+        </div>
+        </div>
+    </div>
+-->
+<!--      footer html    -->
+       <div id="footer">
+            <div id="whiteBox">
+                <div id="footerText">
+                    <ul>
+                        <li>회사소개</li>
+                        <li>환불규정</li>
+                        <li>사업자등록번호</li>
+                        <li>숙박업등록</li>
+                    </ul>
+                </div>
+                <div id="footerInfomation">고객센터 1600-0000&nbsp;&nbsp;|&nbsp;&nbsp;영업시간 : 오전 9시 ~ 새벽 3시 &nbsp;|&nbsp; 점심시간:&nbsp;오후&nbsp;12시&nbsp;~오후&nbsp;1시
+                </div>
+                <div id="footerInfomatoin2">
+                    <br>㈜REQUISE<br><br>
+                    <small> 주소 : 강원도 강릉시 연곡면 홍질목길 55-29<br>
+                        대표이사 : 고길동 | 사업자등록번호: 742-86-00224<br>
+                        통신판매번호 : 2017-서울강남-01779 | 관광사업자 등록번호: 제1026-24호<br>
+                        전화번호☎ : 1670-6250<br>
+                        이메일 : helper@goodchoice.kr<br>
+                        Copyright GC COMPANY Corp. All rights reserved.<br></small>
+                </div>
+                <div id="icons">
+                    <a href="#"><img src="../img/sns_icon_1.png"></a>
+                    <a href="#"><img src="../img/sns_icon_2.png"></a>
+                    <a href="#"><img src="../img/sns_icon_3.png"></a>
+                    <a href="#"><img src="../img/sns_icon_4.png"></a>
+                    <a href="#"><img src="../img/sns_icon_5.png"></a>
+                    
+                </div>
+            </div>
+        </div>
+<!--      footer html    -->
+    </div>
+
+</body></html>

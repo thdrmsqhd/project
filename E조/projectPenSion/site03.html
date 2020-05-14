@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet">
+<!--        header font-->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">  
+<!--    header font  -->
+<!--   footer font  -->
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+<!--    footerfont  -->
+       <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        
+        
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            width: 100%;
+           
+        }
+
+                  a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
+
+        #ye {
+            color: yellow;
+
+        }
+
+        #header {
+            width: 100%;
+            height: 100px;
+            display: block;
+            font-weight: bold;
+        }
+
+        #logo {
+            width: 55%;
+            height: auto;
+            float: left;
+            text-align: right;
+            font-size: 5em;
+            line-height: 100px;
+            font-family: 'Bebas Neue', cursive;
+            color: black;
+        }
+        
+        #Reservation {
+            width: 10%;
+            height: auto;
+            float: right;
+            text-align: center;
+            line-height: 100px;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.5em;
+            background: #ab8f74;
+
+        }
+
+        #Reservation:hover {
+            background: gray;
+        }
+
+        #Language {
+            width: 10%;
+            height: auto;
+            float: right;
+            font-size: 1.5em;
+            text-align: center;
+            line-height: 100px;
+            font-family: 'Bebas Neue', cursive;
+        }
+
+     
+        #div2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 25px;
+            background: #585858;
+            margin-bottom: 0px;
+            height: 50px;
+            color: white;
+            text-align: right;
+            line-height: 50px;
+            width: 100%;
+            display: block;
+            word-spacing: 5px;
+            box-sizing: border-box;
+            padding-right: 50px;
+        }
+
+        /*        여기까지 헤더부       */
+
+        #b-box {
+            float: left;
+            width: 100%;
+            position: relative;
+        }
+
+        .img1 {
+            width: 100%;
+            height: auto;
+            margin-top: -5px;
+            
+        }
+        
+        /*        여기까지 갤러리 내 이미지출력관련       */
+        
+        h2{
+            position: fixed;
+            top: 45%;
+            left: 28%;
+            width: 40%;
+            color: #162b29;
+            padding-left: 4%;
+            font-size: 3em;
+            font-weight:bolder;
+            font-family: 'Permanent Marker', cursive;
+            letter-spacing: 7px;
+            border: 3px solid white;
+            text-align: center;
+            background: white;
+            opacity: 75%;
+            
+        }
+        
+        
+        
+         #main1-logo {
+            width: 400px;
+            height: 100px;
+            text-align: center;
+            position: absolute;
+            left: 35%;
+            top: 200px;
+            font-weight: bold;
+            border-radius:50%;
+            
+        }
+
+        #main1-logo p {
+            font-family: 'Bad Script', cursive;
+            color: black;
+            background: white;
+            opacity: 70%;
+           
+        }
+
+        #main1-logo>p:first-child {
+            font-size: 5em;
+            letter-spacing: 1.5px;
+        }
+
+        #main1-logo>p:last-child {
+            font-size: 22px;
+            letter-spacing: 1.1px;
+        }
+        
+        
+         #main4-logo {
+
+            width: 600px;
+            height: 100px;
+            text-align: center;
+            position: absolute;
+            z-index: 999;
+            right: 0;
+            top: 1500px;
+        }
+
+        #main4-logo p {
+            font-size: 33px;
+            font-weight: 300;
+            color: white;
+            letter-spacing: -1px;
+            font-family: 'IM Fell French Canon SC', serif;
+        }
+
+        
+           
+        /*        여기까지 그림 안에 글씨 넣는 기능 삽입부     */
+
+        /*        여기까지 바디부       */
+        
+        
+/*        footer    */
+        #footer {
+            float: left;
+            background: black;
+            color: darkgray;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: -5px;
+            font-family: 'Noto Sans KR', sans-serif;
+            padding: 30px;
+        }
+
+        #whiteBox {
+            width: 80%;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        #footerText {
+            border: 1px solid black;
+            font-weight: bold;
+        }
+
+        #footerInfomation {
+            border: 1px solid black;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        #footerInfomatoin2 {
+            border: 1px solid black;
+            width: 70%;
+            float: left;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+         #icons a img{
+            float: left;
+            margin-top: 0px;
+            width: 3%;
+            height: 3%;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        #footerText ul li {
+            list-style-type: none;
+            display: inline;
+            text-align: left;
+            margin: 10px;
+            line-height: 50px;
+            font-weight: bold;
+        }
+      
+        #footerbox {
+            width: 100%;
+            height: 300px;
+
+            float: left;
+        }
+/*        footer    */
+    </style>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+
+        <div class="toghter" id="header">
+
+            <div><a id="logo" href="main.html">Requies</a></div>
+            <div id="Reservation"><a href="reservation.html">Reservation</a></div>
+            <div id="Language">Language</div>
+
+        </div>
+
+        <div id="div2">
+            <span class="h">
+        
+                <a href="#">Prologue</a>&nbsp;&nbsp;&nbsp;
+                <a href="Pension.html">Rooms</a>&nbsp;&nbsp;&nbsp;
+                <a id="ye" href="#">Gallery</a>&nbsp;&nbsp;&nbsp;
+                <a href="#">Service</a>&nbsp;&nbsp;&nbsp;
+                <a href="#">Community</a>&nbsp;&nbsp;&nbsp;
+                <a href="reservation.html">Reservation</a>&nbsp;&nbsp;&nbsp;
+                <a href="https://www.google.co.kr/maps/place/%EC%94%A9%ED%8E%9C%EC%85%98+(SSIG)/@37.864103,128.8427177,17.25z/data=!4m8!3m7!1s0x3561e319d812f4e3:0x1b2910532870df6d!5m2!4m1!1i2!8m2!3d37.864195!4d128.844021?hl=ko" target="_blank">Map</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+
+
+
+        <div id="b-box">
+            <h2>Fools wander and <br>wise men travel</h2>
+            <img class="img1" src="../img/ssic.jpg">
+            
+            <div><img class="img1" src="../img/777.jpg"></div>
+            <div id="main4" class="main">
+            <div id="main4-logo">
+            
+            </div>
+            </div>
+            <div><img class="img1" src="../img/ssic2.jpg"></div>
+            <div><img class="img1" src="../img/ssic3.jpg"></div>
+            <div><img class="img1" src="../img/%EC%94%A9%ED%8E%9C%EC%85%982.jpg"></div>
+            <div><img class="img1" src="../img/7.jpg"></div>
+            <div><img class="img1" src="../img/ssic5.jpg"></div>
+            <div><img class="img1" src="../img/3.jpg"></div>
+            <div><img class="img1" src="../img/IMG_6557.jpg"></div>
+            <div><img class="img1" src="../img/DSC06572.jpg"></div>
+            <div><img class="img1" src="../img/spa.jpg"></div>
+            <div><img class="img1" src="../img/ssic4.jpg"></div>
+            <div><img class="img1" src="../img/ssic6.jpg"></div>
+            <div><img class="img1" src="../img/bbq3.jpg"></div>
+            <div><img class="img1" src="../img/travel_img_01.jpg"></div>
+            <div><img class="img1" src="../img/%EA%B2%BD%ED%8F%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5.png"></div>
+            <div><img class="img1" src="../img/333.jpg"></div>
+            <div><img class="img1" src="../img/444.jpg"></div>
+            <div><img class="img1" src="../img/555.jpg"></div>
+            <div><img class="img1" src="../img/2020.jpg"></div>
+            <div><img class="img1" src="../img/666.jpg"></div>
+            
+        </div>
+
+        <div id="footer">
+            <div id="whiteBox">
+                <div id="footerText">
+                    <ul>
+                        <li>회사소개</li>
+                        <li>환불규정</li>
+                        <li>사업자등록번호</li>
+                        <li>숙박업등록</li>
+                    </ul>
+                </div>
+                <div id="footerInfomation">고객센터 1600-0000&nbsp;&nbsp;|&nbsp;&nbsp;영업시간 : 오전 9시 ~ 새벽 3시 &nbsp;|&nbsp; 점심시간:&nbsp;오후&nbsp;12시&nbsp;~오후&nbsp;1시
+                </div>
+                <div id="footerInfomatoin2">
+                    <br>㈜REQUISE<br><br>
+                    <small> 주소 : 강원도 강릉시 연곡면 홍질목길 55-29<br>
+                        대표이사 : 고길동 | 사업자등록번호: 742-86-00224<br>
+                        통신판매번호 : 2017-서울강남-01779 | 관광사업자 등록번호: 제1026-24호<br>
+                        전화번호☎ : 1670-6250<br>
+                        이메일 : helper@goodchoice.kr<br>
+                        Copyright GC COMPANY Corp. All rights reserved.<br></small>
+                </div>
+                <div id="icons">
+                    <a href="#"><img src="../img/sns_icon_1.png"></a>
+                    <a href="#"><img src="../img/sns_icon_2.png"></a>
+                    <a href="#"><img src="../img/sns_icon_3.png"></a>
+                    <a href="#"><img src="../img/sns_icon_4.png"></a>
+                    <a href="#"><img src="../img/sns_icon_5.png"></a>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body></html>

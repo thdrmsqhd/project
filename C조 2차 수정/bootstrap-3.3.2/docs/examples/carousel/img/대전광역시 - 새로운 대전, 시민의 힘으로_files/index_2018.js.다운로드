@@ -1,0 +1,225 @@
+//main script(slide, tab style)
+$(document).ready(function () {
+	//visual popupzone
+	var popZone = $(".m_visualZone ul").bxSlider({
+		nextText:"다음",
+		prevText:"이전",
+		startText:"재생",
+		stopText:"일시정지",
+		mode:'fade',
+		auto:false,
+		pause:5000,
+		speed:1000,
+		autoHover:true,
+		autoControls:true,
+		pager:true,
+		pagerType:'short',
+	});
+	
+	
+	//story popupzone
+	var popZone = $(".m_story_n ul").bxSlider({
+		nextText:"다음",
+		prevText:"이전",
+		startText:"재생",
+		stopText:"일시정지",
+		mode:'fade',
+		auto:false,
+		pause:7000,
+		speed:1000,
+		autoHover:true,
+		autoControls:true,
+		pager:false,
+		pagerType:'short',
+	});
+	
+	//알림창
+	var popZone = $(".m_popupZone ul").bxSlider({
+		nextText:"다음",
+		prevText:"이전",
+		startText:"재생",
+		stopText:"일시정지",
+		mode:'fade',
+		auto:false,
+		pause:5000,
+		speed:1000,
+		autoHover:true,
+		autoControls:true,
+		pager:false
+	});
+	
+	//참여&신고
+	var popZone = $(".m_propose ul").bxSlider({
+		nextText:"다음",
+		prevText:"이전",
+		slideWidth:125,
+		minSlides:1,
+		maxSlides:5,
+		auto:false,
+		pause:5000,
+		speed:1000,
+		autoControls:true,
+		pager:false,
+		infiniteLoop: false
+	});
+	
+	//대표축제
+	var popZone = $(".m_festival ul").bxSlider({
+		nextText:"다음",
+		prevText:"이전",
+		mode:'fade',
+		auto:false,
+		slideWidth:156,
+		minSlides:1,
+		maxSlides:1,
+		pause:5000,
+		speed:1000,
+		autoControls:true,
+		pager:false
+	});
+	
+	//대전관광명소 12선
+	var popZone = $(".m_tour ul").bxSlider({
+		nextText:"다음",
+		prevText:"이전",
+		auto:false,
+		slideWidth:166,
+		minSlides:1,
+		maxSlides:3,
+		pause:5000,
+		speed:1000,
+		autoControls:true,
+		pager:false
+	});
+
+	//main news
+	$('.m_news > ul > li > h3 > a').click(function() {
+		var i = $(this).parent().parent().index();
+		$('.m_news > ul > li').removeClass('on');
+		$(this).parent().parent().addClass('on');
+		$('.m_news > ul > li div').hide().eq(i).fadeIn();
+	});
+
+	//main sns
+	$('.m_sns > ul > li > h3 > a').click(function() {
+		var i = $(this).parent().parent().index();
+		$('.m_sns > ul > li > h3 > a').removeClass('on');
+		$(this).addClass('on');
+		$('.m_sns > ul > li ul').hide().eq(i).fadeIn();
+	});
+});
+
+// modal Layer Popup
+function showLayer(self,obj){
+	var $self = $(self);
+	var $target = $($self.attr('href'));
+	var _pWidth = $target.width()/2;
+	var _pHeight = $target.height()/2;
+	$('.modal_bg').show();
+
+	scrollNone();
+
+	$target.attr('tabindex', '0').show().focus();
+	$(obj).css({"margin-top":"-"+ _pHeight +"px","margin-left":"-"+ _pWidth +"px"})
+	$(obj).find(".modal_close,.layer_close").click(function(){
+		hideLayer();
+	});
+
+	//키보드 포커스 modal popup 영역운영
+	var 
+		firstElement = $target.find("div[tabindex='0'],a,input:not([disabled='disabled']),select,button,textarea").filter(':first'),
+		lastElement = $target.find("div[tabindex='0'],a,input:not([disabled='disabled']),select,button,textarea").filter(':last');
+		firstElement.off("keydown").on("keydown",function(b){
+			if(b.keyCode == 9 && b.shiftKey){
+				b.preventDefault();
+				lastElement.focus();
+			}
+		});
+
+	lastElement.off("keydown").on("keydown",function(b){
+		if(b.keyCode == 9 && b.shiftKey){
+		} else if (b.keyCode == 9){
+			b.preventDefault();
+			firstElement.focus();
+		}
+	});
+
+	function hideLayer(){
+		$(obj).hide();
+		$(obj).removeAttr('tabindex');
+		$('.modal_bg').hide().css({'top':'0','height':'100%'});
+		scrollBlock();
+		$self.focus();
+		$(this).off('click');
+	}
+}
+
+function enableLayerBtn(obj) {
+	$(".modal_close").click(function(){
+		hideLayer(obj);
+		$(this).off('click');
+	});
+}
+
+// modal pop - body scroll
+function scrollNone(){
+	var windowHeight = $(window).height();
+	if(windowHeight > $(".wrap_main").height()){
+		$("html").css({"height":windowHeight +"px","overflow":"hidden"});
+	} else {
+		$("html").css({"height":windowHeight +"px","overflow":"hidden"});
+	}
+}
+
+function scrollBlock(){
+	$("html").css({"height":"auto","overflow":"auto"});
+}
+
+//화면scroll
+	$(function(){
+		var winW=$(window).width();
+
+		if(winW >= 1024){
+			var winH=1117;
+		}else{
+			var winH=$(window).height();
+			$("#section1,#section2,#section3").css({'min-height':winH+"px"});
+		}
+
+		$("#section1,#section2,#section3").css({'min-height':winH+"px"});
+		$("#section2").css({'min-height':"799px"});
+		$("#section3").css({'min-height':"860px"});
+			
+		var num=0;
+		var scrollSpeed=800;	
+		var section1H=$(".section").eq(0).offset().top;
+		var section2H=$(".section").eq(1).offset().top;
+		var section3H=$(".section").eq(2).offset().top;
+
+		$(".screen_rolling li").eq(num).addClass("active");
+		$(".section").eq(num).addClass("active");
+
+		$(window).scroll(function(){
+			var WS=$(window).scrollTop();
+			var turm=145;
+//			console.log(WS);
+
+			if(WS >=0 && WS < section2H-turm){num=0}
+			else if(WS >=section2H-turm && WS < section3H-turm){num=1}
+			else if(WS >=section3H-turm){num=2}
+
+			$(".screen_rolling li").removeClass("active").eq(num).addClass("active");
+			$(".section").removeClass("active").eq(num).addClass("active");
+		});
+
+		$(".screen_rolling li a").click(function(e){
+			e.preventDefault();
+			num=$(this).parent().index();
+			var scrollH=$("#section"+(num+1)).offset().top-80;
+
+			$("html, body").stop().animate({scrollTop:scrollH},scrollSpeed, function(){
+				$(".screen_rolling li").removeClass("active").eq(num).addClass("active");
+				$(".section").removeClass("active").eq(num).addClass("active");
+			});
+		});
+	});
